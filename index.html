@@ -2,12 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Refresh" content="0; url='./wav2bar-website/'" />
     <title>Picorims</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Redirecting to <a href="./wav2bar-website/">Wab2Bar project</a>...</h1> 
+    <header>
+        <img id="profile_icon" width="197" height="197" src="assets/profile_icon.png" />
+        <h1 id="title">Picorims projects</h1>
+    </header>
+    <section id="presentation">
+        <p>
+            Hello, my name is Picorims. I am a freshman computer science student that also enjoy playing and making music.
+            Here's a list of some of my projects.
+        </p>
+    </section>
+    <section id="content">
+        <div id="project_wav2bar" class="project_container">
+            <h2><a href="https://picorims.github.io/wav2bar-website/">Wav2Bar</a></h2>
+            <p>
+                A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
+                backgrounds, text, etc; and export your work as a production ready video.
+            </p>
+            <div class="bgnd_img"></div>
+        </div>
+        <div id="project_plant" class="project_container">
+            <h2><a href="https://github.com/Picorims/plant-game">Plant</a></h2>
+            <p>
+                (In development, release coming soon.) A two players strategy game about growing plants
+                in a small grid. Grow in a smart way to block your opponent from growing further.
+                Maximize your score by taking advantage of various bonuses.
+            </p>
+            <div class="bgnd_img"></div>
+        </div>
+        <div id="project_cursorophone" class="project_container">
+            <h2><a href="https://picorims.github.io/cursorophone">Cursorophone</a></h2>
+            <p>
+                Play music with your mouse on a keyboard like layout. Keep your mouse click down (or spacebar),
+                and slide it to play. Customize the sound to your needs.
+            </p>
+            <div class="bgnd_img"></div>
+        </div>
+    </section>
+    <footer>
+        Copyright (c) 2021 Picorims
+    </footer>
 </body>
 </html>
