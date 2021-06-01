@@ -113,15 +113,25 @@ header {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.5;
     transition: 1s;
 }
 
+#project_wav2bar {
+    box-shadow: 0 5px 10px #06a4fa;
+}
 #project_wav2bar .bgnd_img {
     background-image: url("./assets/wav2bar_background.png");
 }
+#project_plant {
+    box-shadow: 0 5px 10px #26df4e;
+}
 #project_plant .bgnd_img {
     background-image: url("./assets/plant_background.png");
+}
+#project_cursorophone {
+    box-shadow: 0 5px 10px #625a8f;
 }
 #project_cursorophone .bgnd_img {
     background-image: url("./assets/cursorophone_background.png");
