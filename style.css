@@ -19,13 +19,16 @@ body {
     color: white;
 }
 
-a {
+a:not(.button) {
     color: white;
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, var(--main-purple) 50%);
     transition: .2s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: var(--main-purple);
+    text-decoration-thickness: 3px;
 }
-a:hover {
+a:not(.button):hover {
     background-position: 0 100%;
 }
 
@@ -59,6 +62,21 @@ header {
     text-shadow: 1px 1px 5px white;
 }
 
+#email {
+    font-size: 1.5rem;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
 
 
 
@@ -73,30 +91,26 @@ header {
     border-radius: 10px;
 }
 
-#content {
+#projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    padding: 5%;
+    justify-content: space-between;
 }
 
 .project_container {
     position: relative;
     display: block;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
     width: 46%;
-    min-height: 300px;
+    min-height: 400px;
     padding: 4%;
-    margin: 2%;
     overflow: hidden;
-    border-radius: 20px;
     box-shadow: 0 5px 10px var(--blue-shadow);
 }
-.project_container h2 {
+.project_container h3 {
     font-size: 1.8rem;
 }
-.project_container h2 a {
+.project_container h3 a {
     padding: 0.3rem;
 }
 .project_container p {
@@ -118,20 +132,30 @@ header {
     transition: 1s;
 }
 
+.button {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 10px 0;
+    background-color: var(--main-purple);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 #project_wav2bar {
-    box-shadow: 0 5px 10px #06a4fa;
+    box-shadow: inset 0 0px 10px #06a4fa;
 }
 #project_wav2bar .bgnd_img {
     background-image: url("./assets/wav2bar_background.png");
 }
 #project_plant {
-    box-shadow: 0 5px 10px #26df4e;
+    box-shadow: inset 0 0px 10px #26df4e;
 }
 #project_plant .bgnd_img {
     background-image: url("./assets/plant_background.png");
 }
 #project_cursorophone {
-    box-shadow: 0 5px 10px #625a8f;
+    box-shadow: inset 0 0px 10px #625a8f;
 }
 #project_cursorophone .bgnd_img {
     background-image: url("./assets/cursorophone_background.png");
@@ -165,6 +189,5 @@ footer {
 @media (max-width: 1000px) {
     .project_container {
         width: 100%;
-        margin: 3%;
     }
 }
