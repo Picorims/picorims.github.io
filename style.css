@@ -22,6 +22,7 @@ body {
 a:not(.button) {
     color: white;
     background-size: 100% 200%;
+
     background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, var(--main-purple) 50%);
     transition: .2s ease-in-out;
     text-decoration: underline;
@@ -29,6 +30,18 @@ a:not(.button) {
     text-decoration-thickness: 3px;
 }
 a:not(.button):hover {
+    background-position: 0 100%;
+}
+
+a.button {
+    color: white;
+    text-decoration: none;
+
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, var(--main-purple) 50%, var(--main-pink) 50%);
+    transition: .2s ease-in-out;
+}
+a.button:hover {
     background-position: 0 100%;
 }
 
