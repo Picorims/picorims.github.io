@@ -10,16 +10,21 @@ html {
     --main-purple: rgba(131,23,222,1);
     --main-pink: rgba(240,16,120,1);
     --blue-shadow: rgb(32, 103, 190);
+    --black-contrast: rgb(43, 49, 59);
+    --main-black: rgb(19, 21, 26);
+
+    --linear-gradient: linear-gradient(132deg, rgba(0,188,245,1) 0%, rgba(131,23,222,1) 50%, rgba(240,16,120,1) 100%);
+    --header-height: 60px;
 }
 
 body {
-    background-color: rgb(26, 28, 31);
+    background-color: var(--main-black);
     padding: 0;
     margin: 0;
     color: white;
 }
 
-a:not(.button) {
+a:not(.button):not(.discreet) {
     color: white;
     background-size: 100% 200%;
 
@@ -29,7 +34,7 @@ a:not(.button) {
     text-decoration-color: var(--main-purple);
     text-decoration-thickness: 3px;
 }
-a:not(.button):hover {
+a:not(.button):not(.discreet):hover {
     background-position: 0 100%;
 }
 
@@ -47,15 +52,15 @@ a.button:hover {
 
 
 
-header {
+#banner {
     width: 100%;
     padding: 20px;
 
     text-align: center;
     color: white;
 
-    background: rgb(0,188,245);
-    background: linear-gradient(132deg, rgba(0,188,245,1) 0%, rgba(131,23,222,1) 50%, rgba(240,16,120,1) 100%); 
+    /* background: rgb(0,188,245); */
+    /* background: var(--linear-gradient);  */
     box-shadow: 0 0 10px var(--blue-shadow);
 }
 

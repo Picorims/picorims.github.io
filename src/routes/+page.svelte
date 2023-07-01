@@ -1,8 +1,8 @@
-<header>
+<section id="banner">
     <img id="profile_icon" width="197" height="197" src="/assets/profile_icon.png" alt="picorims icon" />
     <h1 id="title">Picorims</h1>
     <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>
-</header>
+</section>
 
 <section id="presentation">
     <p>
@@ -47,7 +47,3 @@
         </div>
     </div>
 </section>
-
-<footer>
-    Copyright (c) 2022-2023 Picorims
-</footer>
