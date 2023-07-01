@@ -1,7 +1,7 @@
 <section id="banner">
     <div>
         <h1 id="title">Picorims</h1>
-        <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>    
+        <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>
     </div>
     <div class="banner-right">
         <div id="profile-icon">
@@ -124,5 +124,24 @@
         font-size: 1.5rem;
         font-style: italic;
         background-color: var(--black-contrast);
+        line-height: 1.5em;
+        box-shadow: 0 0 8px var(--black-shadow);
+    }
+    #presentation > p {
+        position: relative;
+    }
+    #presentation > p::before, #presentation > p::after {
+        position: absolute;
+        display: inline-block;
+        font-size: 2em;
+    }
+    #presentation > p::before {
+        content: "“";
+        left: -0.5em;
+        color: var(--main-blue);
+    }
+    #presentation > p::after {
+        content: "”";
+        color: var(--main-pink);
     }
 </style>
