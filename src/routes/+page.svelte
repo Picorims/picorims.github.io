@@ -72,10 +72,12 @@
     }
 
     div.banner-right {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 50px;
+        animation: floatT 12s ease-in-out 0s infinite, floatL 7.7s ease-in-out 0s infinite;
     }
     #profile-icon {
         position: relative;
@@ -85,24 +87,41 @@
         height: var(--logo-size);
     }
     #profile-icon > img {
+        position: relative;
         width: var(--logo-size);
         height: var(--logo-size);
-        border-radius: var(--logo-size);
+        /* border-radius: var(--logo-size); */
+        animation: profileBubble 30s ease-in-out 0s infinite;
     }
     #profile-icon::after {
-        --shadow-size: calc(var(--logo-size) + 4px);
+        --shadow-size: calc(var(--logo-size) + 8px);
         position: absolute;
-        top: -2px;
-        left: -2px;
+        top: -4px;
+        left: -4px;
         content: "";
         z-index: -1;
         width: var(--shadow-size);
         height: var(--shadow-size);
-        border-radius: var(--shadow-size);
+        /* border-radius: var(--shadow-size); */
         background: var(--main-blue);
         background: var(--linear-gradient);
-        filter: blur(2px);
+        filter: blur(4px);
         transition: 0.1s;
+        animation: profileBubble 30s ease-in-out 0s infinite;
+    }
+    @keyframes profileBubble {
+        0%, 100% {border-radius: 46% 54% 44% 56% / 51% 48% 52% 49%;}
+        25% {border-radius: 52% 48% 43% 57% / 46% 64% 36% 54%;}
+        50% {border-radius: 64% 36% 67% 33% / 44% 52% 48% 56%;}
+        75% {border-radius: 51% 49% 44% 56% / 63% 48% 52% 37%;}
+    }
+    @keyframes floatT {
+        0%, 100% {top: -7px;}
+        50% {top: 7px;}
+    }
+    @keyframes floatL {
+        0%, 100% {left: -7px;}
+        50% {left: 7px;}
     }
 
     #title {
