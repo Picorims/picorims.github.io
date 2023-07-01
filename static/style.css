@@ -23,11 +23,17 @@ body {
     padding: 0;
     margin: 0;
     color: white;
+    width: 100%;
+    overflow-x: hidden;
+
     /*make footer stick to bottom of the page if needed*/
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
 }
+
+
 
 a:not(.button):not(.discreet) {
     color: white;
@@ -57,9 +63,6 @@ a.button:hover {
 
 
 
-
-
-
 h2 {
     font-size: 2rem;
     text-align: center;
@@ -67,110 +70,4 @@ h2 {
 
 h3 {
     font-size: 1.7rem;
-}
-
-
-
-
-
-
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project_container {
-    position: relative;
-    display: block;
-    flex: 1 0 auto;
-    width: 46%;
-    min-height: 400px;
-    padding: 4%;
-    overflow: hidden;
-    box-shadow: 0 5px 10px var(--blue-shadow);
-}
-.project_container h3 {
-    font-size: 1.8rem;
-}
-.project_container h3 a {
-    padding: 0.3rem;
-}
-.project_container p {
-    font-size: 1.2rem;
-    font-style: italic;
-    text-shadow: 0 0 2px black;
-}
-.project_container .bgnd_img {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-    transition: 1s;
-}
-
-.button {
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 10px 0;
-    background-color: var(--main-purple);
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-#project_wav2bar {
-    box-shadow: inset 0 0px 10px #06a4fa;
-}
-#project_wav2bar .bgnd_img {
-    background-image: url("./assets/wav2bar_background.png");
-}
-#project_plant {
-    box-shadow: inset 0 0px 10px #26df4e;
-}
-#project_plant .bgnd_img {
-    background-image: url("./assets/plant_background.png");
-}
-#project_cursorophone {
-    box-shadow: inset 0 0px 10px #625a8f;
-}
-#project_cursorophone .bgnd_img {
-    background-image: url("./assets/cursorophone_background.png");
-}
-
-.project_container:hover .bgnd_img {
-    opacity: 0.75;
-    transition: 0.3s;
-}
-
-
-
-
-
-footer {
-    width: 100%;
-    padding: 1rem 10%;
-    text-align: center;
-}
-
-
-
-
-
-@media (max-width: 640px) {
-    #title {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 1000px) {
-    .project_container {
-        width: 100%;
-    }
 }

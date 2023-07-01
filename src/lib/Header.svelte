@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: var(--header-height);
+        min-height: var(--header-height);
         background-color: var(--black-contrast);
 
         border-bottom: 3px solid;

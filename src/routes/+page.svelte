@@ -18,47 +18,10 @@
     </p>
 </section>
 
-<section id="projects-section">
-    <h2>Projects</h2>
-    <div id="projects">
-        <div id="project_wav2bar" class="project_container">
-            <h3><a href="https://picorims.github.io/wav2bar-website/">Wav2Bar</a></h3>
-            <p>
-                A free, open source audio visualizer creator. Add visualizers, timers,
-                particle flows, images, backgrounds, text, etc; and export your work
-                as a production ready video.
-            </p>
-            <a class="button" href="https://picorims.github.io/wav2bar-website/">Explore</a>
-            <div class="bgnd_img"></div>
-        </div>
-        <div id="project_plant" class="project_container">
-            <h3><a href="https://github.com/Picorims/plant-game">Plant</a></h3>
-            <p>
-                (In development, release coming soon.) A two players strategy game
-                about growing plants in a small grid. Grow in a smart way
-                to block your opponent from growing further.
-                Maximize your score by taking advantage of various bonuses.
-            </p>
-            <a class="button" href="https://github.com/Picorims/plant-game">Explore</a>
-            <div class="bgnd_img"></div>
-        </div>
-        <div id="project_cursorophone" class="project_container">
-            <h3><a href="https://picorims.github.io/cursorophone">Cursorophone</a></h3>
-            <p>
-                Play music with your mouse on a keyboard like layout.
-                Keep your mouse click down (or spacebar),
-                and slide it to play. Customize the sound to your needs.
-            </p>
-            <a class="button" href="https://picorims.github.io/cursorophone">Explore</a>
-            <div class="bgnd_img"></div>
-        </div>
-    </div>
-</section>
-
 <style>
     #banner {
         width: 100%;
-        padding: 50px;
+        padding: 50px 5%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -69,27 +32,67 @@
     }
     #banner > div {
         flex: 1 1 auto;
+        max-width: 100%;
     }
+
+    #title {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px white;
+        transition: 0.2s;
+    }
+
+    #email {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 640px) {
+        #title {
+            font-size: 2rem;
+        }
+        #email {
+            font-size: 1.25rem;
+        }
+    }
+    @media (max-width: 340px) {
+        #email {
+            font-size: 1rem;
+        }
+    }
+
+
+
+
+
+
 
     div.banner-right {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px;
+        padding: 50px 5%;
         animation: floatT 12s ease-in-out 0s infinite, floatL 7.7s ease-in-out 0s infinite;
     }
     #profile-icon {
         position: relative;
-        margin-left: 20px;
         --logo-size: 197px;
         width: var(--logo-size);
         height: var(--logo-size);
+        transition: 0.1s;
+    }
+    @media screen and (max-width: 420px) {
+        #profile-icon {
+            --logo-size: 150px;
+        }
     }
     #profile-icon > img {
         position: relative;
-        width: var(--logo-size);
-        height: var(--logo-size);
+        width: 100%;
+        min-width: var(--logo-size);
+        height: 100%;
         /* border-radius: var(--logo-size); */
         animation: profileBubble 30s ease-in-out 0s infinite;
     }
@@ -124,17 +127,6 @@
         50% {left: 7px;}
     }
 
-    #title {
-        font-size: 3rem;
-        margin-top: 0;
-        margin-bottom: 0.25em;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 5px white;
-    }
-
-    #email {
-        font-size: 1.5rem;
-    }
 
 
 

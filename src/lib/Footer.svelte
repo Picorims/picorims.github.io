@@ -22,8 +22,12 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        width: 100%;
+        padding: 1rem 10%;
+        margin-top: 50px;
         background-color: var(--black-contrast);
         text-align: left;
+        box-shadow: 0 0 8px var(--black-shadow);
     }
 
     h2 {
