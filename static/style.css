@@ -52,37 +52,6 @@ a.button:hover {
 
 
 
-#banner {
-    width: 100%;
-    padding: 20px;
-
-    text-align: center;
-    color: white;
-
-    /* background: rgb(0,188,245); */
-    /* background: var(--linear-gradient);  */
-    box-shadow: 0 0 10px var(--blue-shadow);
-}
-
-#profile_icon {
-    width: 20%;
-    height: auto;
-    min-width: 100px;
-    max-width: 197px;
-    border-radius: 50%;
-    border: 2px solid white;
-    box-shadow: 0 0 5px white;
-}
-
-#title {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px white;
-}
-
-#email {
-    font-size: 1.5rem;
-}
 
 
 
@@ -99,15 +68,6 @@ h3 {
 
 
 
-#presentation {
-    margin: 3rem 10%;
-    padding: 1rem 10%;
-    font-size: 1.5rem;
-    font-style: italic;
-    border-top: 5px solid var(--main-blue);
-    border-bottom: 5px solid var(--main-purple);
-    border-radius: 10px;
-}
 
 #projects {
     display: flex;

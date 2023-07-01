@@ -1,13 +1,20 @@
 <section id="banner">
-    <img id="profile_icon" width="197" height="197" src="/assets/profile_icon.png" alt="picorims icon" />
-    <h1 id="title">Picorims</h1>
-    <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>
+    <div>
+        <h1 id="title">Picorims</h1>
+        <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>    
+    </div>
+    <div class="banner-right">
+        <div id="profile-icon">
+            <img width="197" height="197" src="/assets/profile_icon.png" alt="picorims icon" />
+        </div>
+    </div>
 </section>
 
 <section id="presentation">
     <p>
-        Hi, my name is Picorims, and I am a second year French computer science student
-        that also enjoy playing and making music.
+        Hi, my name is Picorims, and I am a French computer science student
+        in apprenticeship at Polytech Paris-Saclay.
+        I also enjoy playing and making music!
     </p>
 </section>
 
@@ -47,3 +54,75 @@
         </div>
     </div>
 </section>
+
+<style>
+    #banner {
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        color: white;
+    }
+    #banner > div {
+        flex: 1 1 auto;
+    }
+
+    div.banner-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+    #profile-icon {
+        position: relative;
+        margin-left: 20px;
+        --logo-size: 197px;
+        width: var(--logo-size);
+        height: var(--logo-size);
+    }
+    #profile-icon > img {
+        width: var(--logo-size);
+        height: var(--logo-size);
+        border-radius: var(--logo-size);
+    }
+    #profile-icon::after {
+        --shadow-size: calc(var(--logo-size) + 4px);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        content: "";
+        z-index: -1;
+        width: var(--shadow-size);
+        height: var(--shadow-size);
+        border-radius: var(--shadow-size);
+        background: var(--main-blue);
+        background: var(--linear-gradient);
+        filter: blur(2px);
+        transition: 0.1s;
+    }
+
+    #title {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 0.25em;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 5px white;
+    }
+
+    #email {
+        font-size: 1.5rem;
+    }
+
+
+
+    #presentation {
+        padding: 3rem 10%;
+        font-size: 1.5rem;
+        font-style: italic;
+        background-color: var(--black-contrast);
+    }
+</style>
