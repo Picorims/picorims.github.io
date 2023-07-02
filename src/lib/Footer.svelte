@@ -13,7 +13,8 @@
     <div>
         <h2>Contact</h2>
         <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>
-        <p>Copyright (c) 2022-2023 Picorims</p>
+        <p>Copyright (c) 2022-2023 Picorims.</p>
+        <p>Icons are courtesy of <a href="https://remixicon.com/">Remix Icon <i class="ri-remixicon-fill"></i></a>.</p>
     </div>
 </footer>    
 

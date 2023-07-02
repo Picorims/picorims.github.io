@@ -1,3 +1,7 @@
+<script lang="ts">
+	import CategoryCard, { Color } from "$lib/CategoryCard.svelte";
+</script>
+
 <section id="banner">
     <div>
         <h1 id="title">Picorims</h1>
@@ -16,6 +20,21 @@
         in apprenticeship at Polytech Paris-Saclay.
         I also enjoy playing and making music!
     </p>
+</section>
+
+<section>
+    <h2>See what I am up to</h2>
+    <div class="categories">
+        <CategoryCard color={Color.BLUE} title="Development" icon="ri-code-s-slash-line" href="/development">
+            <i class="ri-code-s-slash-line"></i>
+        </CategoryCard>
+        <CategoryCard color={Color.PURPLE} title="Music" icon="ri-disc-fill" href="/music">
+            
+        </CategoryCard>
+        <CategoryCard color={Color.PINK} title="Minecraft" icon="ri-box-3-fill" href="/minecraft">
+            
+        </CategoryCard>
+    </div>
 </section>
 
 <style>
@@ -154,5 +173,16 @@
     #presentation > p::after {
         content: "”";
         color: var(--main-pink);
+    }
+
+
+
+    div.categories {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        padding: 0 10%;
     }
 </style>

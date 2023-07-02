@@ -16,6 +16,7 @@ html {
 
     --linear-gradient: linear-gradient(132deg, rgba(0,188,245,1) 0%, rgba(131,23,222,1) 50%, rgba(240,16,120,1) 100%);
     --header-height: 60px;
+    --main-border-radius: 10px;
 }
 
 body {
