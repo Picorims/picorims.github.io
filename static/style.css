@@ -13,6 +13,7 @@ html {
     --black-contrast: rgb(43, 49, 59);
     --black-shadow: rgb(43, 49, 59);
     --main-black: rgb(19, 21, 26);
+    --main-black-transparent: rgb(19, 21, 26, 0.5);
 
     --linear-gradient: linear-gradient(132deg, rgba(0,188,245,1) 0%, rgba(131,23,222,1) 50%, rgba(240,16,120,1) 100%);
     --header-height: 60px;
@@ -62,7 +63,11 @@ a.button:hover {
     background-position: 0 100%;
 }
 
-
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 1px 3px white;
+}
 
 h2 {
     font-size: 2rem;

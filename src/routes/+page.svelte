@@ -25,15 +25,9 @@
 <section>
     <h2>See what I am up to</h2>
     <div class="categories">
-        <CategoryCard color={Color.BLUE} title="Development" icon="ri-code-s-slash-line" href="/development">
-            <i class="ri-code-s-slash-line"></i>
-        </CategoryCard>
-        <CategoryCard color={Color.PURPLE} title="Music" icon="ri-disc-fill" href="/music">
-            
-        </CategoryCard>
-        <CategoryCard color={Color.PINK} title="Minecraft" icon="ri-box-3-fill" href="/minecraft">
-            
-        </CategoryCard>
+        <CategoryCard color={Color.BLUE} title="Development" icon="ri-code-s-slash-line" href="/development"></CategoryCard>
+        <CategoryCard color={Color.PURPLE} title="Music" icon="ri-disc-fill" href="/music"></CategoryCard>
+        <CategoryCard color={Color.PINK} title="Minecraft" icon="ri-box-3-fill" href="/minecraft"></CategoryCard>
     </div>
 </section>
 
@@ -59,7 +53,6 @@
         margin-top: 0;
         margin-bottom: 0.25em;
         text-transform: uppercase;
-        text-shadow: 1px 1px 5px white;
         transition: 0.2s;
     }
 
@@ -179,7 +172,6 @@
 
     div.categories {
         display: flex;
-        align-items: stretch;
         justify-content: center;
         gap: 50px;
         flex-wrap: wrap;
