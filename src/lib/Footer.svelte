@@ -1,3 +1,7 @@
+<script lang="ts">
+	import SocialIcon from "./SocialIcon.svelte";
+</script>
+
 <footer>
     <div>
         <h2>Navigation</h2>
@@ -12,9 +16,18 @@
     </div>
     <div>
         <h2>Contact</h2>
-        <a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a>
-        <p>Copyright (c) 2022-2023 Picorims.</p>
-        <p>Icons are courtesy of <a href="https://remixicon.com/">Remix Icon <i class="ri-remixicon-fill"></i></a>.</p>
+        <p><a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a></p>
+        <p>
+            <SocialIcon href="https://discord.gg/EVGzfdP" icon="ri-discord-fill" color="#7289DA"></SocialIcon>
+            <SocialIcon href="https://www.youtube.com/@picorims" icon="ri-youtube-fill" color="#FF0000"></SocialIcon>
+            <SocialIcon href="https://github.com/Picorims" icon="ri-github-fill"></SocialIcon>
+            <SocialIcon href="https://twitter.com/picorims" icon="ri-twitter-fill" color="#1DA1F2"></SocialIcon>
+        </p>
+        <p>
+            Copyright (c) 2022-2023 Picorims.<br/>
+            Icons are courtesy of <a href="https://remixicon.com/">Remix Icon <i class="ri-remixicon-fill"></i></a>.
+        </p>
+        <p></p>
     </div>
 </footer>    
 
