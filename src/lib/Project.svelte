@@ -6,7 +6,7 @@
 </script>
 
 <div class="project-container" style="box-shadow: 0 5px 10px {shadowColor}">
-    <div class="bgnd-img" style="background-image: url('{background}')"></div>
+    <img class="bgnd-img" src={background}/ alt="{title} thumbnail">
     <div class="card-container">
         <h3><a href={href}>{title}</a></h3>
         <p>
@@ -39,11 +39,9 @@
         font-size: 1.1rem;
     }
     div.project-container .bgnd-img {
+        width: 100%;
         height: 200px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: var(--black-contrast);
+        object-fit: cover;
     }
 
     a.button {
