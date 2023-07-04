@@ -6,7 +6,7 @@
 </script>
 
 <div class="project-container" style="box-shadow: 0 5px 10px {shadowColor}">
-    <img class="bgnd-img" src={background}/ alt="{title} thumbnail">
+    <img class="bgnd-img" src={background} alt="{title} thumbnail">
     <div class="card-container">
         <h3><a href={href}>{title}</a></h3>
         <p>

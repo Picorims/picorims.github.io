@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CategoryCard, { Color } from "$lib/CategoryCard.svelte";
+    import profileIcon from "$lib/assets/profile_icon.png";
 </script>
 
 <section id="banner">
@@ -9,7 +10,7 @@
     </div>
     <div class="banner-right">
         <div id="profile-icon">
-            <img width="197" height="197" src="/assets/profile_icon.png" alt="picorims icon" />
+            <img width="197" height="197" src={profileIcon} alt="picorims icon" />
         </div>
     </div>
 </section>

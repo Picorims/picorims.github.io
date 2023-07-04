@@ -1,10 +1,11 @@
 <script lang="ts">
 	let menuVisible = false;
+    import profileIcon from "$lib/assets/profile_icon.png";
 </script>
 
 <header>
 	<a id="logo" href="/" class="discreet">
-		<img width="197" height="197" src="/assets/profile_icon.png" alt="picorims icon" />
+		<img width="197" height="197" src={profileIcon} alt="picorims icon" />
 	</a>
 	<nav class="nav-pc">
 		<a class="discreet" href="/">Home</a>
