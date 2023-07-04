@@ -45,7 +45,7 @@
     @media screen and (max-width: 460px) {
         a.container {
             --size: 200px;
-            font-size: 7rem;
+            font-size: 6rem;
         }
         h3 {
             font-size: 1.25rem;
