@@ -16,7 +16,7 @@
 			href="https://picorims.github.io/wav2bar-website/"
 			shadowColor="#06a4fa"
 			background={w2bThumb}
-			techList={[Tech.js, Tech.css, Tech.html, Tech.electron]}
+			techList={[Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo]}
 		>
 			A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
 			backgrounds, text, etc; and export your work as a production ready video.
@@ -51,6 +51,24 @@
 		>
 			Play music with your mouse on a keyboard like layout. Keep your mouse click down (or
 			spacebar), and slide it to play. Customize the sound to your needs.
+		</Project>
+
+		<Project
+			title="Spotify playlist analyzer"
+			href="https://github.com/Picorims/spotify-playlist-analyzer"
+            techList={[Tech.python]}
+		>
+			Explore all kind of data about a given spotify playlist. All results are provided
+            through an exported PDF file and additional CSV indexes.
+		</Project>
+
+		<Project
+			title="The Melodic Chrono"
+			href="https://github.com/Picorims/spotify-playlist-analyzer"
+            techList={[Tech.android]}
+		>
+			Very basic application to play sequence of notes synchronized with a chronometer,
+            allowing to know its progression without having to turn on the phone.
 		</Project>
 	</div>
 </section>
