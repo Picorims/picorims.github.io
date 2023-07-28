@@ -31,6 +31,21 @@
 		</Project>
         
 		<Project
+			title="Trip planification dashboard"
+            techList={[Tech.ts, Tech.css, Tech.scss, Tech.html, Tech.angular, Tech.php, Tech.mariadb]}
+		>
+			Customizable dashboard (size and position of cards) designed to display data about a given location. 
+		</Project>
+        
+		<Project
+			title="Billiard"
+            techList={[Tech.cpp, Tech.opengl]}
+		>
+			Billiard made from scratch, including the rendering of the objects through glu and the development
+            of a simple 3D engine.
+		</Project>
+        
+		<Project
 			title="Plant"
 			href="https://github.com/Picorims/plant-game"
 			shadowColor="#26df4e"

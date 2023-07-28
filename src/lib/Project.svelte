@@ -17,12 +17,18 @@
         </div>
     {/if}
     <div class="card-container">
-        <h3><a href={href}>{title}</a></h3>
+        {#if href !== "/"}
+            <h3><a href={href}>{title}</a></h3>
+        {:else}
+            <h3>{title}</h3>
+        {/if}
         <TechList list={techList}></TechList>
         <p>
             <slot></slot>
         </p>
-        <a class="button" href={href}>Explore</a>
+        {#if href !== "/"}
+            <a class="button" href={href}>Explore</a>
+        {/if}
     </div>
 </div>
 
