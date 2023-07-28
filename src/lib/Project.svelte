@@ -1,14 +1,18 @@
 <script lang="ts">
+	import TechList, {Tech} from "./TechList.svelte";
+    
     export let title = "title";
     export let href = "/";
     export let shadowColor = "var(--blue-shadow)";
     export let background = "";
+    export let techList: Array<Tech> = [];
 </script>
 
 <div class="project-container" style="box-shadow: 0 5px 10px {shadowColor}">
     <img class="bgnd-img" src={background} alt="{title} thumbnail">
     <div class="card-container">
         <h3><a href={href}>{title}</a></h3>
+        <TechList list={techList}></TechList>
         <p>
             <slot></slot>
         </p>
@@ -33,6 +37,7 @@
     div.card-container h3 {
         font-size: 1.8rem;
         margin: 0;
+        margin-bottom: 0.25em;
     }
     div.card-container p {
         margin: 0.5em 0;

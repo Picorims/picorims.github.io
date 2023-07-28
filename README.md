@@ -60,3 +60,8 @@ You can preview the production build with `npm run preview`.
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
+
+### Icons
+
+- Icons provided by Remix Icon - https://remixicon.com/
+- Logos provided by Simple Icons - https://simpleicons.org/
