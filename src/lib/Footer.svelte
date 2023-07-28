@@ -21,7 +21,7 @@
             <SocialIcon href="https://discord.gg/EVGzfdP" icon="ri-discord-fill" color="#7289DA"></SocialIcon>
             <SocialIcon href="https://www.youtube.com/@picorims" icon="ri-youtube-fill" color="#FF0000"></SocialIcon>
             <SocialIcon href="https://github.com/Picorims" icon="ri-github-fill"></SocialIcon>
-            <SocialIcon href="https://twitter.com/picorims" icon="ri-twitter-fill" color="#1DA1F2"></SocialIcon>
+            <!-- <SocialIcon href="https://twitter.com/picorims" icon="ri-twitter-fill" color="#1DA1F2"></SocialIcon> -->
         </p>
         <p>
             Copyright (c) 2022-2023 Picorims.<br/>
