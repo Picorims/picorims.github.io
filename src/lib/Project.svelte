@@ -9,7 +9,13 @@
 </script>
 
 <div class="project-container" style="box-shadow: 0 5px 10px {shadowColor}">
-    <img class="bgnd-img" src={background} alt="{title} thumbnail">
+    {#if background !== ""}
+        <img class="bgnd-img" src={background} alt="{title} thumbnail">
+    {:else}
+        <div class="bgnd-img">
+            <i class="ri-image-fill"></i>
+        </div>
+    {/if}
     <div class="card-container">
         <h3><a href={href}>{title}</a></h3>
         <TechList list={techList}></TechList>
@@ -47,6 +53,14 @@
         width: 100%;
         height: 200px;
         object-fit: cover;
+    }
+    div.project-container div.bgnd-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        background-color: var(--main-black);
+        color: var(--black-contrast);
     }
 
     a.button {

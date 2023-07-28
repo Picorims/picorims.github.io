@@ -27,9 +27,7 @@
 			href="https://github.com/Picorims/directogallery"
             techList={[Tech.ts, Tech.css, Tech.html, Tech.tauri, Tech.rust, Tech.svelte]}
 		>
-			A two players strategy game about growing plants in a small grid. Grow in a smart way to block
-			your opponent from growing further. Maximize your score by taking advantage of various
-			bonuses.
+			Application to browse a file system directory as a gallery.
 		</Project>
         
 		<Project
