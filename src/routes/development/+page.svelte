@@ -21,6 +21,17 @@
 			A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
 			backgrounds, text, etc; and export your work as a production ready video.
 		</Project>
+
+		<Project
+			title="Directogallery"
+			href="https://github.com/Picorims/directogallery"
+            techList={[Tech.ts, Tech.css, Tech.html, Tech.tauri, Tech.rust, Tech.svelte]}
+		>
+			A two players strategy game about growing plants in a small grid. Grow in a smart way to block
+			your opponent from growing further. Maximize your score by taking advantage of various
+			bonuses.
+		</Project>
+        
 		<Project
 			title="Plant"
 			href="https://github.com/Picorims/plant-game"
@@ -32,6 +43,7 @@
 			your opponent from growing further. Maximize your score by taking advantage of various
 			bonuses.
 		</Project>
+        
 		<Project
 			title="Cursorophone"
 			href="https://picorims.github.io/cursorophone"
