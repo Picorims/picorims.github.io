@@ -35,7 +35,6 @@
     footer {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         width: 100%;
         padding: 1rem 10%;
         margin-top: 50px;
