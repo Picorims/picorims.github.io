@@ -51,7 +51,7 @@
 			href="https://github.com/Picorims/plant-game"
 			shadowColor="#26df4e"
 			background={plantThumb}
-            techList={[Tech.js, Tech.css, Tech.html, Tech.electron]}
+            techList={[Tech.js, Tech.css, Tech.html, Tech.electron, Tech.p5]}
 		>
 			A two players strategy game about growing plants in a small grid. Grow in a smart way to block
 			your opponent from growing further. Maximize your score by taking advantage of various
