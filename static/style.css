@@ -55,7 +55,12 @@ a:not(.button):not(.discreet):hover {
 a.button {
     color: white;
     text-decoration: none;
-
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    
+    background-color: var(--main-purple);
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, var(--main-purple) 50%, var(--main-pink) 50%);
     transition: .2s ease-in-out;

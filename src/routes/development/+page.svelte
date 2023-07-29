@@ -4,6 +4,7 @@
 	import plantThumb from '$lib/assets/project_thumbnails/plant_background.jpg';
 	import cursorophoneThumb from '$lib/assets/project_thumbnails/cursorophone_background.png';
 	import { Tech } from '$lib/TechList.svelte';
+	import { TechLists } from '$lib/techlists';
 </script>
 
 <h1>Development</h1>
@@ -13,10 +14,10 @@
 	<div id="projects">
 		<Project
 			title="Wav2Bar"
-			href="https://picorims.github.io/wav2bar-website/"
+			href="/development/project/wav2bar"
 			shadowColor="#06a4fa"
 			background={w2bThumb}
-			techList={[Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo]}
+			techList={TechLists.wav2bar}
 		>
 			A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
 			backgrounds, text, etc; and export your work as a production ready video.

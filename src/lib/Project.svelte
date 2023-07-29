@@ -16,16 +16,20 @@
             <i class="ri-image-fill"></i>
         </div>
     {/if}
+    
     <div class="card-container">
         {#if href !== "/"}
             <h3><a href={href}>{title}</a></h3>
         {:else}
             <h3>{title}</h3>
         {/if}
+
         <TechList list={techList}></TechList>
+        
         <p>
             <slot></slot>
         </p>
+        
         {#if href !== "/"}
             <a class="button" href={href}>Explore</a>
         {/if}
@@ -67,14 +71,5 @@
         font-size: 5rem;
         background-color: var(--main-black);
         color: var(--black-contrast);
-    }
-
-    a.button {
-        display: inline-block;
-        padding: 0.5rem;
-        background-color: var(--main-purple);
-        cursor: pointer;
-        border-radius: 5px;
-        font-weight: bold;
     }
 </style>
