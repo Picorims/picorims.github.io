@@ -34,7 +34,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
     },
     directogallery: {
         name: "Directogallery",
-        tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo, Tech.mocha, Tech.chai],
+        tech: [Tech.ts, Tech.css, Tech.html, Tech.tauri, Tech.rust, Tech.svelte],
         year: "2023",
         tags: [Tag.personal],
         thumbnail: directoThumb
