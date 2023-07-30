@@ -2,13 +2,12 @@
 	import ProjectHeader from '$lib/ProjectHeader.svelte';
 	import ProjectDetails from '$lib/ProjectDetails.svelte';
 
-	import { TechLists } from '$lib/techlists';
-	import w2bThumb from '$lib/assets/project_thumbnails/wav2bar_background.jpg';
+	import { ProjectInfo } from '$lib/project_info';
 </script>
 
-<ProjectHeader title="Wav2Bar" background={w2bThumb} />
+<ProjectHeader projectInfo={ProjectInfo.wav2bar} />
 
-<ProjectDetails techList={TechLists.wav2bar} href="https://picorims.github.io/wav2bar-website/">
+<ProjectDetails projectInfo={ProjectInfo.wav2bar} href="https://picorims.github.io/wav2bar-website/">
 	<span slot="strengths">
 		<li>published</li>
 		<li>positive feedback from users and small activity</li>

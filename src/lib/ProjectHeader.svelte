@@ -1,12 +1,13 @@
 <script lang="ts">
-    export let title = "";
-    export let background = "";
+	import type { ProjectData } from "./project_info";
+
+    export let projectInfo: ProjectData;
 </script>
 
 <header>
-    <h1>{title}</h1>
-    {#if background !== ""}
-        <img src={background} alt={title + " thumbnail"}>
+    <h1>{projectInfo.name}</h1>
+    {#if projectInfo.thumbnail}
+        <img src={projectInfo.thumbnail} alt={projectInfo.name + " thumbnail"}>
     {/if}
 </header>
 

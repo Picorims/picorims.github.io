@@ -1,16 +1,28 @@
 <script lang="ts">
+	import TagList from "./TagList.svelte";
 	import TechList, {Tech} from "./TechList.svelte";
+	import type { ProjectData } from "./project_info";
 
-    export let techList: Array<Tech> = [];
+    export let projectInfo: ProjectData;
     export let href = "";
 </script>
 
 <section class="project-header">
     <h2>Details</h2>
 
+    <p>
+        <strong>Year: </strong>
+        <span>{projectInfo.year}</span>
+    </p>
+
+    <p>
+        <strong>Tags: </strong>
+        <TagList tagList={projectInfo.tags}></TagList>
+    </p>
+
     <p class="tech">
         <strong>Technologies: </strong>
-        <TechList list={techList} withLabels></TechList>
+        <TechList list={projectInfo.tech} withLabels></TechList>
     </p>
 
     <div class="pros-cons">
@@ -64,6 +76,7 @@
     }
     p strong {
         font-size: 1.2em;
+        margin-right: 0.25em;
         text-decoration: underline var(--main-blue);
     }
 
