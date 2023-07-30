@@ -13,6 +13,13 @@
 	<h2>Projects</h2>
 	<div id="projects">
 		<Project
+			shadowColor="rgba(240,16,120,1)"
+			projectInfo={ProjectInfo.thisWebsite}
+		>
+			From a single HTML file to a Svelte static website.
+		</Project>
+
+		<Project
 			href="/development/project/wav2bar"
 			shadowColor="#06a4fa"
 			projectInfo={ProjectInfo.wav2bar}
@@ -24,18 +31,21 @@
 		<Project
 			href="https://github.com/Picorims/directogallery"
             projectInfo={ProjectInfo.directogallery}
+			shadowColor="#0a91d4"
 		>
 			Application to browse a file system directory as a gallery.
 		</Project>
         
 		<Project
 			projectInfo={ProjectInfo.tripDashboard}
+			shadowColor="#ffb800"
 		>
 			Customizable dashboard (size and position of cards) designed to display data about a given location. 
 		</Project>
         
 		<Project
 			projectInfo={ProjectInfo.billiard}
+			shadowColor="#e29400"
 		>
 			Billiard made from scratch, including the rendering of the objects through glu and the development
             of a simple 3D engine.
@@ -71,6 +81,7 @@
 		<Project
 			href="https://github.com/Picorims/the-melodic-chrono"
 			projectInfo={ProjectInfo.melodicChrono}
+			shadowColor="#bb86fc"
 		>
 			Very basic application to play sequence of notes synchronized with a chronometer,
             allowing to know its progression without having to turn on the phone.
