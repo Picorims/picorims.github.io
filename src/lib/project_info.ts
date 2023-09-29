@@ -27,7 +27,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
     },
     wav2bar: {
         name: "Wav2Bar",
-        tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo, Tech.mocha, Tech.chai],
+        tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo, Tech.mocha, Tech.chai, Tech.ffmpeg],
         year: "2019-2023",
         tags: [Tag.personal, Tag.heavy, Tag.public],
         thumbnail: w2bThumb
@@ -52,6 +52,18 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2023",
         tags: [Tag.team, Tag.university],
         thumbnail: billardThumb
+    },
+    compilator: {
+        name: "C subset compilator",
+        tech: [Tech.js, Tech.ts, Tech.mocha],
+        year: "2023",
+        tags: [Tag.team, Tag.university],
+    },
+    projector: {
+        name: "Projector",
+        tech: [Tech.cpp, Tech.ffmpeg, Tech.raspberrypi],
+        year: "2023",
+        tags: [Tag.team, Tag.university, Tag.heavy],
     },
     plant: {
         name: "Plant",

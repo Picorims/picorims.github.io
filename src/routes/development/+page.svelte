@@ -52,6 +52,21 @@
 		</Project>
         
 		<Project
+			projectInfo={ProjectInfo.compilator}
+		>
+			A compilator for a subset of C. It supports integers, variables, conditionals, for and while loops,
+			functions, pointers and arrays.
+		</Project>
+        
+		<Project
+			projectInfo={ProjectInfo.projector}
+		>
+			A projector supporting static image and video display, with a resolution of 100x100 and a framerate
+			of 10fps. I contributed to the development of the video preprocessing, and pixel handling inside
+			microcontrollers.
+		</Project>
+        
+		<Project
 			href="https://github.com/Picorims/plant-game"
 			shadowColor="#26df4e"
 			projectInfo={ProjectInfo.plant}
