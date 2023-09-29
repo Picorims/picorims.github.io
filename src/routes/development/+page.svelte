@@ -44,6 +44,7 @@
 		</Project>
         
 		<Project
+			href="https://github.com/Picorims/app3-transverse-billiard"
 			projectInfo={ProjectInfo.billiard}
 			shadowColor="#e29400"
 		>
