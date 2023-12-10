@@ -53,8 +53,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.team, Tag.university],
         thumbnail: billardThumb
     },
-    compilator: {
-        name: "C subset compilator",
+    compiler: {
+        name: "C subset compiler",
         tech: [Tech.js, Tech.ts, Tech.mocha],
         year: "2023",
         tags: [Tag.team, Tag.university],

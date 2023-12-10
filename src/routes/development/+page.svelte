@@ -53,9 +53,9 @@
 		</Project>
         
 		<Project
-			projectInfo={ProjectInfo.compilator}
+			projectInfo={ProjectInfo.compiler}
 		>
-			A compilator for a subset of C. It supports integers, variables, conditionals, for and while loops,
+			A compiler for a subset of C. It supports integers, variables, conditionals, for and while loops,
 			functions, pointers and arrays.
 		</Project>
         
