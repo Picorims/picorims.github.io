@@ -66,6 +66,16 @@
 			of 10fps. I contributed to the development of the video preprocessing, and pixel handling inside
 			microcontrollers.
 		</Project>
+
+		<Project
+			href="https://picorims.github.io/station-games"
+			shadowColor="#77CBD5"
+			projectInfo={ProjectInfo.stationGames}
+		>
+			A game about guessing all subway, train, tramway and bus stations of Ile-De-France.
+			The game's database is obtained from Ile-De-France Mobilités' open data files.
+			See in-game information for more details.
+		</Project>
         
 		<Project
 			href="https://github.com/Picorims/plant-game"

@@ -9,6 +9,7 @@ import directoThumb from "$lib/assets/project_thumbnails/directogallery_backgrou
 import billardThumb from "$lib/assets/project_thumbnails/billiard_background.png";
 import playlistThumb from "$lib/assets/project_thumbnails/playlist_analyzer_background.png";
 import chronoThumb from "$lib/assets/project_thumbnails/melodic_chrono_background.jpg";
+import stationThumb from "$lib/assets/project_thumbnails/station_games_background.jpg";
 
 export interface ProjectData {
     readonly name: string,
@@ -65,11 +66,18 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2023",
         tags: [Tag.team, Tag.university, Tag.heavy],
     },
+    stationGames: {
+        name: "Station Games",
+        tech: [Tech.ts, Tech.js, Tech.css, Tech.html, Tech.svelte, Tech.leaflet],
+        year: "2023",
+        tags: [Tag.personal, Tag.public],
+        thumbnail: stationThumb,
+    },
     plant: {
         name: "Plant",
         tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.p5],
         year: "2019-2020",
-        tags: [Tag.personal, Tag.heavy],
+        tags: [Tag.personal, Tag.heavy, Tag.public],
         thumbnail: plantThumb,
     },
     cursorophone: {
@@ -83,14 +91,14 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         name: "Spotify playlist analyzer",
         tech: [Tech.python, Tech.numpy, Tech.pandas],
         year: "2022-2023",
-        tags: [Tag.personal],
+        tags: [Tag.personal, Tag.public],
         thumbnail: playlistThumb
     },
     melodicChrono: {
         name: "The Melodic Chrono",
         tech: [Tech.android],
         year: "2022",
-        tags: [Tag.personal],
+        tags: [Tag.personal, Tag.public],
         thumbnail: chronoThumb
     },
 }
