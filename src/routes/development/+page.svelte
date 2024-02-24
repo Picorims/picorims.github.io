@@ -76,6 +76,14 @@
 			The game's database is obtained from Ile-De-France Mobilités' open data files.
 			See in-game information for more details.
 		</Project>
+
+		<Project
+			href="https://github.com/Picorims/network-graph-display"
+			projectInfo={ProjectInfo.networkGraphFromBitmap}
+		>
+			Transform a bitmap image into a non directed weighted network graph, and display it
+			using a web viewer to perform Dijkstra's algorithm on selected nodes.
+		</Project>
         
 		<Project
 			href="https://github.com/Picorims/plant-game"

@@ -73,6 +73,12 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.personal, Tag.public],
         thumbnail: stationThumb,
     },
+    networkGraphFromBitmap: {
+        name: "Network graph from bitmap image",
+        tech: [Tech.python, Tech.numpy, Tech.svelte, Tech.html, Tech.css, Tech.ts],
+        year: "2024",
+        tags: [Tag.personal, Tag.public]
+    },
     plant: {
         name: "Plant",
         tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.p5],
