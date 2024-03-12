@@ -37,4 +37,13 @@
 		more customization. While being a project on my spare time, I still try to provide something as
 		professional as possible. I am also open to suggestions.
 	</p>
+
+	<p>
+		Currently, some brainstorming is happening for a rewrite with better architecture, improved
+		performance and an improved user interface, using Tauri as a replacement.
+	</p>
+	<ul>
+		<li><strong><a target="_blank" href="https://design.penpot.app/#/view/82e31d90-3829-8139-8002-c506ce8814c1?page-id=82e31d90-3829-8139-8002-c506ce8814c2&section=interactions&index=0&share-id=dbcc1ffd-3b06-8112-8002-ee511a3f3cd7">PenPot mockup</a></strong></li>
+		<li><strong><a target="_blank" href="https://github.com/Picorims/audio-visualization-tauri">prototype (WIP)</a></strong></li>
+	</ul>
 </section>
