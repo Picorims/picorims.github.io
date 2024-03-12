@@ -79,6 +79,12 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2024",
         tags: [Tag.personal, Tag.public]
     },
+    imageAnnotationTool: {
+        name: "Image annotation software",
+        tech: [Tech.vbnet],
+        year: "2021",
+        tags: [Tag.university, Tag.team]
+    },
     plant: {
         name: "Plant",
         tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.p5],

@@ -84,6 +84,14 @@
 			Transform a bitmap image into a non directed weighted network graph, and display it
 			using a web viewer to perform Dijkstra's algorithm on selected nodes.
 		</Project>
+
+		<Project
+			projectInfo={ProjectInfo.imageAnnotationTool}
+		>
+			This software allows to place points for the different features of a face, to then compare
+			a face with other faces and display the closest one. The focus was on creating a great user
+			interface and experience.
+		</Project>
         
 		<Project
 			href="https://github.com/Picorims/plant-game"
