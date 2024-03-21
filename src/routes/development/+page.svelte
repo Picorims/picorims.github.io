@@ -1,9 +1,5 @@
 <script lang="ts">
 	import Project from '$lib/Project.svelte';
-	import w2bThumb from '$lib/assets/project_thumbnails/wav2bar_background.jpg';
-	import plantThumb from '$lib/assets/project_thumbnails/plant_background.jpg';
-	import cursorophoneThumb from '$lib/assets/project_thumbnails/cursorophone_background.png';
-	import { Tech } from '$lib/TechList.svelte';
 	import { ProjectInfo } from '$lib/project_info';
 	import ProjectList from '$lib/ProjectList.svelte';
 </script>

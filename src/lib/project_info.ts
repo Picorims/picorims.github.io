@@ -11,6 +11,9 @@ import playlistThumb from "$lib/assets/project_thumbnails/playlist_analyzer_back
 import chronoThumb from "$lib/assets/project_thumbnails/melodic_chrono_background.jpg";
 import stationThumb from "$lib/assets/project_thumbnails/station_games_background.jpg";
 
+import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
+import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
+
 export interface ProjectData {
     readonly name: string,
     readonly tech: Array<Tech>,
@@ -20,6 +23,7 @@ export interface ProjectData {
 }
 
 export const ProjectInfo: {[index: string]: ProjectData} = {
+    //dev =======================
     thisWebsite: {
         name: "This website!",
         tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte],
@@ -113,4 +117,23 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.personal, Tag.public],
         thumbnail: chronoThumb
     },
+
+    // minecraft =======================
+
+    projectZearth: {
+        name: "Project Zearth",
+        tech: [],
+        year: "2017-now",
+        tags: [Tag.team, Tag.personal, Tag.heavy, Tag.public],
+        thumbnail: pzThumb
+    },
+    divercity: {
+        name: "Divercity",
+        tech: [],
+        year: "2015-2020",
+        tags: [Tag.heavy, Tag.personal, Tag.public],
+        thumbnail: dvThumb
+    }
+
+    // music =======================
 }
