@@ -133,7 +133,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2015-2020",
         tags: [Tag.heavy, Tag.personal, Tag.public],
         thumbnail: dvThumb
-    }
+    },
 
     // music =======================
+    youtubeMusic: {
+        name: "Picorims music - Youtube",
+        tech: [],
+        year: "2017",
+        tags: [Tag.personal, Tag.public],
+    }
 }
