@@ -5,13 +5,14 @@
 	import cursorophoneThumb from '$lib/assets/project_thumbnails/cursorophone_background.png';
 	import { Tech } from '$lib/TechList.svelte';
 	import { ProjectInfo } from '$lib/project_info';
+	import ProjectList from '$lib/ProjectList.svelte';
 </script>
 
 <h1>Development</h1>
 
 <section id="projects-section">
 	<h2>Projects</h2>
-	<div id="projects">
+	<ProjectList>
 		<Project
 			shadowColor="rgba(240,16,120,1)"
 			projectInfo={ProjectInfo.thisWebsite}
@@ -30,35 +31,35 @@
 
 		<Project
 			href="https://github.com/Picorims/directogallery"
-            projectInfo={ProjectInfo.directogallery}
+			projectInfo={ProjectInfo.directogallery}
 			shadowColor="#0a91d4"
 		>
 			Application to browse a file system directory as a gallery.
 		</Project>
-        
+		
 		<Project
 			projectInfo={ProjectInfo.tripDashboard}
 			shadowColor="#ffb800"
 		>
 			Customizable dashboard (size and position of cards) designed to display data about a given location. 
 		</Project>
-        
+		
 		<Project
 			href="https://github.com/Picorims/app3-transverse-billiard"
 			projectInfo={ProjectInfo.billiard}
 			shadowColor="#e29400"
 		>
 			Billiard made from scratch, including the rendering of the objects through glu and the development
-            of a simple 3D engine.
+			of a simple 3D engine.
 		</Project>
-        
+		
 		<Project
 			projectInfo={ProjectInfo.compiler}
 		>
 			A compiler for a subset of C. It supports integers, variables, conditionals, for and while loops,
 			functions, pointers and arrays.
 		</Project>
-        
+		
 		<Project
 			projectInfo={ProjectInfo.projector}
 		>
@@ -92,7 +93,7 @@
 			a face with other faces and display the closest one. The focus was on creating a great user
 			interface and experience.
 		</Project>
-        
+		
 		<Project
 			href="https://github.com/Picorims/plant-game"
 			shadowColor="#26df4e"
@@ -102,7 +103,7 @@
 			your opponent from growing further. Maximize your score by taking advantage of various
 			bonuses.
 		</Project>
-        
+		
 		<Project
 			href="https://picorims.github.io/cursorophone"
 			shadowColor="#625a8f"
@@ -117,7 +118,7 @@
 			projectInfo={ProjectInfo.spotifyAnalyzer}
 		>
 			Explore all kind of data about a given spotify playlist. All results are provided
-            through an exported PDF file and additional CSV indexes.
+			through an exported PDF file and additional CSV indexes.
 		</Project>
 
 		<Project
@@ -126,18 +127,7 @@
 			shadowColor="#bb86fc"
 		>
 			Very basic application to play sequence of notes synchronized with a chronometer,
-            allowing to know its progression without having to turn on the phone.
-		</Project>
-	</div>
+			allowing to know its progression without having to turn on the phone.
+		</Project>	
+	</ProjectList>
 </section>
-
-<style>
-	#projects {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		/* align-items: stretch; */
-		padding: 0 10%;
-		gap: 50px;
-	}
-</style>
