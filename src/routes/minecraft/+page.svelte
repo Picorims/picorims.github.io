@@ -27,4 +27,7 @@
             pick the unfinished version linked in the description of the map.
         </Project>
     </ProjectList>
+
+    <h2>Gallery</h2>
+    <h3>Coming soon!</h3>
 </section>
