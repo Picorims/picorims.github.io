@@ -237,22 +237,24 @@
     export let withLabels: boolean = false;
 </script>
 
-<div class="tech-list">
-{#each list as tech, i}
-    <div class="icon-block">
-        <span class="icon" style:fill={techDictionary[tech].color}>
-            {@html techDictionary[tech].icon}
-        </span>
+{#if list.length > 0}
+    <div class="tech-list">
+    {#each list as tech, i}
+        <div class="icon-block">
+            <span class="icon" style:fill={techDictionary[tech].color}>
+                {@html techDictionary[tech].icon}
+            </span>
 
-        {#if withLabels}
-            <span>{techDictionary[tech].name}</span>
-            {#if i < list.length-1}
-            ,
-            {/if}    
-        {/if}
+            {#if withLabels}
+                <span>{techDictionary[tech].name}</span>
+                {#if i < list.length-1}
+                ,
+                {/if}    
+            {/if}
+        </div>
+    {/each}
     </div>
-{/each}
-</div>
+{/if}
 
 <style>
     div.tech-list {
