@@ -6,6 +6,7 @@
 		"dev": "vite dev",
 		"dev:open": "vite dev --open",
 		"build": "vite build",
+		"build:open": "npm run build && npm run prevuew:open",
 		"preview": "vite preview",
 		"preview:open": "vite preview --open",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
