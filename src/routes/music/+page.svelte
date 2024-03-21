@@ -20,5 +20,16 @@
         >
             Some finished tracks are available here.
         </Project>
+
+        <!--Also in dev-->
+        <Project
+            href="/development/project/wav2bar"
+            shadowColor="#06a4fa"
+            projectInfo={ProjectInfo.wav2bar}
+        >
+            A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
+            backgrounds, text, etc; and export your work as a production ready video.
+        </Project>
+
     </ProjectList>
 </section>

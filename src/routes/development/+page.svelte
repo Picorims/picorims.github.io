@@ -16,6 +16,7 @@
 			From a single HTML file to a Svelte static website.
 		</Project>
 
+		<!--Also in music-->
 		<Project
 			href="/development/project/wav2bar"
 			shadowColor="#06a4fa"
