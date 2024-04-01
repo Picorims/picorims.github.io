@@ -55,6 +55,12 @@
         overflow: hidden;
         background-color: var(--black-contrast);
     }
+    @media screen and (max-width: 460px) {
+        div.project-container {
+            width: 100%;
+        }
+    }
+
     div.card-container {
         padding: 20px;
     }
