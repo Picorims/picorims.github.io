@@ -44,6 +44,7 @@
 	</p>
 	<ul>
 		<li><strong><a target="_blank" href="https://design.penpot.app/#/view/82e31d90-3829-8139-8002-c506ce8814c1?page-id=82e31d90-3829-8139-8002-c506ce8814c2&section=interactions&index=0&share-id=dbcc1ffd-3b06-8112-8002-ee511a3f3cd7">PenPot mockup</a></strong></li>
-		<li><strong><a target="_blank" href="https://github.com/Picorims/audio-visualization-tauri">prototype (WIP)</a></strong></li>
+		<li><strong><a target="_blank" href="https://github.com/Picorims/audio-visualization-tauri">prototype</a></strong></li>
+		<li><strong><a target="_blank" href="https://github.com/Picorims/wav2bar-reborn">rewrite (WIP)</a></strong></li>
 	</ul>
 </section>
