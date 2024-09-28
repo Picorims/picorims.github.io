@@ -35,6 +35,7 @@
 		</Project>
 		
 		<Project
+			href="/development/project/trip_planification_dashboard"
 			projectInfo={ProjectInfo.tripDashboard}
 			shadowColor="#ffb800"
 		>
