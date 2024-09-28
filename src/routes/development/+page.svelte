@@ -59,6 +59,7 @@
 		</Project>
 		
 		<Project
+			href="/development/project/projector"
 			projectInfo={ProjectInfo.projector}
 		>
 			A projector supporting static image and video display, with a resolution of 100x100 and a framerate

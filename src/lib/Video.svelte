@@ -2,18 +2,18 @@
     export let src = "";
     export let loop = true;
     export let type = "video/mp4";
+    export let width: number | undefined = undefined;
 </script>
 
 <!-- svelte-ignore a11y-media-has-caption -->
-<video {loop} preload="metadata" controls>
+<video {loop} preload="metadata" controls {width}>
     <source {src} {type}>
 </video>
 
 <style>
     video {
-        width: 100%;
         max-width: 100%;
         height: auto;
-        margin: 1em 0;
+        margin: 1em auto;
     }
 </style>
