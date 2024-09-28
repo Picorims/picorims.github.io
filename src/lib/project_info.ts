@@ -12,6 +12,7 @@ import chronoThumb from "$lib/assets/project_thumbnails/melodic_chrono_backgroun
 import stationThumb from "$lib/assets/project_thumbnails/station_games_background.jpg";
 import gpsThumb from "$lib/assets/project_thumbnails/gps_background.png";
 import iconMakerThumb from "$lib/assets/project_thumbnails/desktop_icon_maker_background.png";
+import projectorThumb from "$lib/assets/project_thumbnails/projector_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -71,6 +72,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tech: [Tech.cpp, Tech.ffmpeg, Tech.raspberrypi],
         year: "2023",
         tags: [Tag.team, Tag.university, Tag.heavy],
+        thumbnail: projectorThumb
     },
     stationGames: {
         name: "Station Games",
