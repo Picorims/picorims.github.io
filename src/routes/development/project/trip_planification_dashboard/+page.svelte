@@ -10,7 +10,7 @@
 
 <ProjectHeader projectInfo={ProjectInfo.tripDashboard} />
 
-<ProjectDetails projectInfo={ProjectInfo.tripDashboard} href="https://picorims.github.io/wav2bar-website/">
+<ProjectDetails projectInfo={ProjectInfo.tripDashboard}>
 	<span slot="strengths">
 		<li>High customization</li>
 		<li>Modular</li>
