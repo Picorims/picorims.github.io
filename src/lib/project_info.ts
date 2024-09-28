@@ -10,6 +10,8 @@ import billardThumb from "$lib/assets/project_thumbnails/billiard_background.png
 import playlistThumb from "$lib/assets/project_thumbnails/playlist_analyzer_background.png";
 import chronoThumb from "$lib/assets/project_thumbnails/melodic_chrono_background.jpg";
 import stationThumb from "$lib/assets/project_thumbnails/station_games_background.jpg";
+import gpsThumb from "$lib/assets/project_thumbnails/gps_background.png";
+import iconMakerThumb from "$lib/assets/project_thumbnails/desktop_icon_maker_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -77,6 +79,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.personal, Tag.public],
         thumbnail: stationThumb,
     },
+    localGps: {
+        name: "Local GPS",
+        tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte],
+        year: "2024",
+        tags: [Tag.personal, Tag.public],
+        thumbnail: gpsThumb
+    },
     networkGraphFromBitmap: {
         name: "Network graph from bitmap image",
         tech: [Tech.python, Tech.numpy, Tech.svelte, Tech.html, Tech.css, Tech.ts],
@@ -109,6 +118,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2022-2023",
         tags: [Tag.personal, Tag.public],
         thumbnail: playlistThumb
+    },
+    desktopIconMaker: {
+        name: "Desktop icon maker",
+        tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte],
+        year: "2024",
+        tags: [Tag.personal, Tag.public],
+        thumbnail: iconMakerThumb
     },
     melodicChrono: {
         name: "The Melodic Chrono",

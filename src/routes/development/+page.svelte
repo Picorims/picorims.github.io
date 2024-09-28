@@ -76,6 +76,14 @@
 		</Project>
 
 		<Project
+			href="https://picorims.github.io/network-graph-display/"
+			projectInfo={ProjectInfo.localGps}
+		>
+			Display a network graph on top of a given background, and allow to perform
+			Dijkstra's algorithm on selected nodes. Built on top of the network graph from bitmap project.
+		</Project>
+
+		<Project
 			href="https://github.com/Picorims/network-graph-display"
 			projectInfo={ProjectInfo.networkGraphFromBitmap}
 		>
@@ -116,6 +124,15 @@
 		>
 			Explore all kind of data about a given spotify playlist. All results are provided
 			through an exported PDF file and additional CSV indexes.
+		</Project>
+
+		<Project
+			href="https://picorims.github.io/desktop-icon-maker/"
+			projectInfo={ProjectInfo.desktopIconMaker}
+		>
+			A small tool to generate a desktop icon (or whatever other purpose)
+			as .ico, .png or .jpeg file. The user can provide a svg document, and
+			customize the appearance (colors, size, padding, radius, etc).
 		</Project>
 
 		<Project
