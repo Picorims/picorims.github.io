@@ -25,14 +25,6 @@
 			A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
 			backgrounds, text, etc; and export your work as a production ready video.
 		</Project>
-
-		<Project
-			href="https://github.com/Picorims/directogallery"
-			projectInfo={ProjectInfo.directogallery}
-			shadowColor="#0a91d4"
-		>
-			Application to browse a file system directory as a gallery.
-		</Project>
 		
 		<Project
 			href="/development/project/trip_planification_dashboard"
@@ -91,6 +83,14 @@
 		>
 			Transform a bitmap image into a non directed weighted network graph, and display it
 			using a web viewer to perform Dijkstra's algorithm on selected nodes.
+		</Project>
+
+		<Project
+			href="https://github.com/Picorims/directogallery"
+			projectInfo={ProjectInfo.directogallery}
+			shadowColor="#0a91d4"
+		>
+			Application to browse a file system directory as a gallery.
 		</Project>
 
 		<Project

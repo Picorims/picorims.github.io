@@ -40,13 +40,6 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.personal, Tag.heavy, Tag.public],
         thumbnail: w2bThumb
     },
-    directogallery: {
-        name: "Directogallery",
-        tech: [Tech.ts, Tech.css, Tech.html, Tech.tauri, Tech.rust, Tech.svelte],
-        year: "2023",
-        tags: [Tag.personal],
-        thumbnail: directoThumb
-    },
     tripDashboard: {
         name: "Trip planification dashboard",
         tech: [Tech.ts, Tech.css, Tech.scss, Tech.html, Tech.angular, Tech.php, Tech.mariadb, Tech.xampp],
@@ -93,6 +86,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tech: [Tech.python, Tech.numpy, Tech.svelte, Tech.html, Tech.css, Tech.ts],
         year: "2024",
         tags: [Tag.personal, Tag.public]
+    },
+    directogallery: {
+        name: "Directogallery",
+        tech: [Tech.ts, Tech.css, Tech.html, Tech.tauri, Tech.rust, Tech.svelte],
+        year: "2023",
+        tags: [Tag.personal],
+        thumbnail: directoThumb
     },
     imageAnnotationTool: {
         name: "Image annotation software",
