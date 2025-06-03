@@ -7,6 +7,7 @@
 <h1>Development</h1>
 
 <section id="projects-section">
+	<!-- TODO IA contraintes, web sémantique, service, blog anglais -->
 	<h2>Projects</h2>
 	<ProjectList>
 		<Project
