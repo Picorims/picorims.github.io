@@ -76,6 +76,25 @@
 		</Project>
 
 		<Project
+			href="https://github.com/nano1342/Broccol-E"
+			projectInfo={ProjectInfo.broccolEVR}
+			shadowColor="#2aeecd"
+		>
+			A VR game where you need to survive as long as possible by completing missions involving object target and manipulation.
+			The player moves by teleporting to glowing cylinders. I worked on a dynamic 3D vessel map, menus, random mission picking,
+			dynamic music based on time left, and sounds.
+		</Project>
+
+		<Project
+			href="https://github.com/Picorims/app5-ai-french-phonetics"
+			projectInfo={ProjectInfo.fr2phonAI}
+		>
+			AI CLI sequence to sequence model that converts French text to phonetic transcription, based on existing tutorials
+			and Open Lexicon data. It uses an encoder-decoder model with LSTM (Long short-term memory) layers.
+			Best reached rate is around 50% accuracy on a test set of 1000 words, with mistakes equivalent to those of a young child.
+		</Project>
+
+		<Project
 			href="https://picorims.github.io/station-games"
 			shadowColor="#77CBD5"
 			projectInfo={ProjectInfo.stationGames}

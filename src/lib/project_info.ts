@@ -15,6 +15,8 @@ import iconMakerThumb from "$lib/assets/project_thumbnails/desktop_icon_maker_ba
 import projectorThumb from "$lib/assets/project_thumbnails/projector_background.png";
 import shader3dThumb from "$lib/assets/project_thumbnails/shader_3d_background.png";
 import shader2dThumb from "$lib/assets/project_thumbnails/shader_2d_background.png";
+import broccolEVRThumb from "$lib/assets/project_thumbnails/broccole_vr_background.png";
+import fr2phonAIThumb from "$lib/assets/project_thumbnails/fr2phon_ai_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -82,6 +84,20 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2025",
         tags: [Tag.university, Tag.public, Tag.heavy],
         thumbnail: shader2dThumb
+    },
+    broccolEVR: {
+        name: "Broccol-E - VR game",
+        tech: [Tech.csharp, Tech.unity, Tech.pico],
+        year: "2024-2025",
+        tags: [Tag.team, Tag.university, Tag.heavy],
+        thumbnail: broccolEVRThumb
+    },
+    fr2phonAI: {
+        name: "Fr2PhonAI - French to phonetic transcription AI",
+        tech: [Tech.python, Tech.scikitlearn],
+        year: "2024",
+        tags: [Tag.university, Tag.team, Tag.heavy],
+        thumbnail: fr2phonAIThumb
     },
     stationGames: {
         name: "Station Games",
