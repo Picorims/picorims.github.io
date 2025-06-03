@@ -60,6 +60,22 @@
 		</Project>
 
 		<Project
+			href="https://www.shadertoy.com/view/Wf3XR7"
+			projectInfo={ProjectInfo.shader3D}
+			shadowColor="#64ccf5"
+		>
+			An infinite 3D GLSL landscape made out of SDFs (Signed Distance Functions). WARNING: link to the project is resource intensive!
+		</Project>
+
+		<Project
+			href="https://www.shadertoy.com/view/tXfGDB"
+			projectInfo={ProjectInfo.shader2D}
+			shadowColor="#5e00b2"
+		>
+			A 2D GLSL landscape made out of SDFs (Signed Distance Functions). WARNING: link to the project may be resource intensive on mobile!
+		</Project>
+
+		<Project
 			href="https://picorims.github.io/station-games"
 			shadowColor="#77CBD5"
 			projectInfo={ProjectInfo.stationGames}
