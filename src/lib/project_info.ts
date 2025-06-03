@@ -30,13 +30,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
     thisWebsite: {
         name: "This website!",
         tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte],
-        year: "2019-2023",
+        year: "2019-now",
         tags: [Tag.personal, Tag.public],
     },
     wav2bar: {
         name: "Wav2Bar",
         tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo, Tech.mocha, Tech.chai, Tech.ffmpeg],
-        year: "2019-2023",
+        year: "2019-now",
         tags: [Tag.personal, Tag.heavy, Tag.public],
         thumbnail: w2bThumb
     },
