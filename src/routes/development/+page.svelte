@@ -76,6 +76,16 @@
 		</Project>
 
 		<Project
+			href="https://github.com/Picorims/app5-broccolii"
+			projectInfo={ProjectInfo.broccolii}
+			shadowColor="#37e04d"
+		>
+			A 2D live multiplayer game where a bunch of words are displayed on the screen, and players need to write them as fast as possible.
+			Worked on the websocket server, UI design, token based login system, as well as Temporarily deploying online with Docker
+			to test with the class during demo.
+		</Project>
+
+		<Project
 			href="https://github.com/nano1342/Broccol-E"
 			projectInfo={ProjectInfo.broccolEVR}
 			shadowColor="#2aeecd"
