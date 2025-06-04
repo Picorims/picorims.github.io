@@ -11,7 +11,7 @@
     export let projectInfo: ProjectData | null = null;
 </script>
 
-<div class="project-container" style="box-shadow: 0 5px 10px {shadowColor}">
+<div class="project-container" style="box-shadow: 0 0px 24px {shadowColor}; --color: {shadowColor}">
     {#if (projectInfo && projectInfo.thumbnail) || background !== ""}
         <img class="bgnd-img" src={projectInfo?.thumbnail || background} alt="{projectInfo?.name || title} thumbnail">
     {:else}
@@ -54,6 +54,7 @@
         border-radius: var(--main-border-radius);
         overflow: hidden;
         background-color: var(--black-contrast);
+        border: 1px solid var(--color);
     }
     @media screen and (max-width: 460px) {
         div.project-container {
