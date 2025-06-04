@@ -13,7 +13,7 @@
     export let icon = "";
 </script>
 
-<a class="container discreet" href={href} style="color: var(--main-{color})">
+<a class="container discreet" href={href} style="color: var(--main-{color}); --color: var(--main-{color})">
     <i class={icon}></i>
     <h3>{title}</h3>
 </a>
@@ -25,7 +25,8 @@
         width: var(--size);
         height: var(--size);
         border-radius: var(--size);
-        box-shadow: 0 0 8px var(--black-shadow);
+        box-shadow: 0 0 16px var(--color);
+        border: 2px solid var(--color);
 
         text-align: center;
         text-decoration: none;
@@ -34,7 +35,9 @@
     }
     a.container:hover {
         transform: scale(1.1);
-        background-color: var(--black-contrast);
+        background-color: var(--black-contrast); /* Fallback for browsers that don't support oklch */
+        background-color: oklch(from var(--color) 10% 0.2 h);
+        box-shadow: 0 0 32px var(--color);
     }
 
     h3 {
