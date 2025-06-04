@@ -163,6 +163,15 @@
 		</Project>
 
 		<Project
+			href="https://penpot.app/penpothub/plugins/tiling-utility"
+			projectInfo={ProjectInfo.penpotPlugin}
+			shadowColor="#31efb8"
+		>
+			Penpot plugin contest entry, allowing to create a grid or revolution patterns from a source element,
+			with support for offsets and randomization.
+		</Project>
+		
+		<Project
 			projectInfo={ProjectInfo.imageAnnotationTool}
 		>
 			This software allows to place points for the different features of a face, to then compare

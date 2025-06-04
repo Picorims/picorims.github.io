@@ -22,6 +22,7 @@ import brocampiaThumb from "$lib/assets/project_thumbnails/brocampia_background.
 import bruicolisThumb from "$lib/assets/project_thumbnails/bruicolis_background.png";
 import musicBlogThumb from "$lib/assets/project_thumbnails/music_blog_background.png";
 import bloggingKitThumb from "$lib/assets/project_thumbnails/blogging_kit_background.png";
+import penpotPluginThumb from "$lib/assets/project_thumbnails/penpot_plugin_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -158,6 +159,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2023",
         tags: [Tag.personal],
         thumbnail: directoThumb
+    },
+    penpotPlugin: {
+        name: "Penpot plugin",
+        tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte],
+        year: "2024",
+        tags: [Tag.personal, Tag.public],
+        thumbnail: penpotPluginThumb
     },
     imageAnnotationTool: {
         name: "Image annotation software",
