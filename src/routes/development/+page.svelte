@@ -139,6 +139,14 @@
 		</Project>
 
 		<Project
+			href="https://github.com/Picorims/app5-bruicolis-front"
+			projectInfo={ProjectInfo.bruicolis}
+		>
+			Developed the front-end of a web application to manage a library of music tracks, and make tag based playlists.
+			Contributed a bit to the back-end routes (clean architecture, REST API), but didn't work on its architecture.
+		</Project>
+
+		<Project
 			href="https://github.com/Picorims/directogallery"
 			projectInfo={ProjectInfo.directogallery}
 			shadowColor="#0a91d4"

@@ -19,6 +19,7 @@ import broccolEVRThumb from "$lib/assets/project_thumbnails/broccole_vr_backgrou
 import fr2phonAIThumb from "$lib/assets/project_thumbnails/fr2phon_ai_background.png";
 import broccoliiThumb from "$lib/assets/project_thumbnails/broccolii_background.png";
 import brocampiaThumb from "$lib/assets/project_thumbnails/brocampia_background.png";
+import bruicolisThumb from "$lib/assets/project_thumbnails/bruicolis_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -134,6 +135,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tech: [Tech.python, Tech.numpy, Tech.svelte, Tech.html, Tech.css, Tech.ts],
         year: "2024",
         tags: [Tag.personal, Tag.public]
+    },
+    bruicolis: {
+        name: "Bruicolis - Playlist management API and frontend",
+        tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte, Tech.prisma, Tech.sqlite, Tech.express],
+        year: "2025",
+        tags: [Tag.university, Tag.team, Tag.heavy],
+        thumbnail: bruicolisThumb
     },
     directogallery: {
         name: "Directogallery",
