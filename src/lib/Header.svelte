@@ -121,6 +121,7 @@
 		content: '';
 		height: 2px;
 		background-color: var(--main-blue);
+		box-shadow: 0 0 4px var(--main-blue);
 		transition: 0.1s;
 	}
 	nav.nav-mobile a::after {
