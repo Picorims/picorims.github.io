@@ -7,7 +7,6 @@
 <h1>Development</h1>
 
 <section id="projects-section">
-	<!-- TODO service, blog anglais -->
 	<h2>Projects</h2>
 	<ProjectList>
 		<Project
@@ -144,6 +143,15 @@
 		>
 			Developed the front-end of a web application to manage a library of music tracks, and make tag based playlists.
 			Contributed a bit to the back-end routes (clean architecture, REST API), but didn't work on its architecture.
+		</Project>
+
+		<Project
+			href="https://picorims.github.io/svelte-blogging-kit/"
+			projectInfo={ProjectInfo.bloggingKit}
+		>
+			Simple svelte library to help creating blog post pages (only). Not production ready,
+			wrote only for the purpose of powering my blog "Your first music track"
+			(showcased on the music page).
 		</Project>
 
 		<Project

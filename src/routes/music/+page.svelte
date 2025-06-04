@@ -21,6 +21,14 @@
             Some finished tracks are available here.
         </Project>
 
+        <Project
+            projectInfo={ProjectInfo.yourFirstMusicTrack}
+            href="https://your-first-music-track.weebly.com/"
+        >
+            University English blog introducing music composition and production
+            to people unfamiliar with music theory.
+        </Project>
+
         <!--Also in dev-->
         <Project
             href="/development/project/wav2bar"
