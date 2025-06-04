@@ -18,6 +18,7 @@ import shader2dThumb from "$lib/assets/project_thumbnails/shader_2d_background.p
 import broccolEVRThumb from "$lib/assets/project_thumbnails/broccole_vr_background.png";
 import fr2phonAIThumb from "$lib/assets/project_thumbnails/fr2phon_ai_background.png";
 import broccoliiThumb from "$lib/assets/project_thumbnails/broccolii_background.png";
+import brocampiaThumb from "$lib/assets/project_thumbnails/brocampia_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -107,6 +108,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.university, Tag.team, Tag.heavy],
         thumbnail: fr2phonAIThumb
     },
+    brocampia: {
+        name: "Brocampia - Escampe/Mana MinMax tree based AI",
+        tech: [Tech.java],
+        year: "2025",
+        tags: [Tag.university, Tag.team],
+        thumbnail: brocampiaThumb
+    },
     stationGames: {
         name: "Station Games",
         tech: [Tech.ts, Tech.js, Tech.css, Tech.html, Tech.svelte, Tech.leaflet],
@@ -170,7 +178,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
     },
     melodicChrono: {
         name: "The Melodic Chrono",
-        tech: [Tech.android],
+        tech: [Tech.android, Tech.java],
         year: "2022",
         tags: [Tag.personal, Tag.public],
         thumbnail: chronoThumb

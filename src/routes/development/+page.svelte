@@ -7,7 +7,7 @@
 <h1>Development</h1>
 
 <section id="projects-section">
-	<!-- TODO IA contraintes, web sémantique, service, blog anglais -->
+	<!-- TODO service, blog anglais -->
 	<h2>Projects</h2>
 	<ProjectList>
 		<Project
@@ -103,6 +103,13 @@
 			AI CLI sequence to sequence model that converts French text to phonetic transcription, based on existing tutorials
 			and Open Lexicon data. It uses an encoder-decoder model with LSTM (Long short-term memory) layers.
 			Best reached rate is around 50% accuracy on a test set of 1000 words, with mistakes equivalent to those of a young child.
+		</Project>
+
+		<Project
+			projectInfo={ProjectInfo.brocampia}
+		>
+			Decision tree based "old school" AI for the game Escampe (also known as Mana).
+			UI and client server interaction were provided.
 		</Project>
 
 		<Project
