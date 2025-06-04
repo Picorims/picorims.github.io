@@ -11,6 +11,7 @@ html {
     --main-pink: rgba(240,16,120,1);
     --blue-shadow: rgb(32, 103, 190);
     --black-contrast: rgb(43, 49, 59);
+    --black-contrast-transparent: rgba(43, 49, 59, 0.8);
     --black-shadow: rgb(43, 49, 59);
     --main-black: rgb(19, 21, 26);
     --main-black-transparent: rgb(19, 21, 26, 0.5);

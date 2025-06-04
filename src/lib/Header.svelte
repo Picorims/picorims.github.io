@@ -50,7 +50,8 @@
 		justify-content: space-between;
 		width: 100%;
 		min-height: var(--header-height);
-		background-color: var(--black-contrast);
+		background-color: var(--black-contrast-transparent);
+		backdrop-filter: blur(10px);
 
 		border-bottom: 3px solid;
 		border-image-slice: 1;
