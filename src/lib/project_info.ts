@@ -45,7 +45,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
     },
     wav2bar: {
         name: "Wav2Bar",
-        tech: [Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo, Tech.mocha, Tech.chai, Tech.ffmpeg],
+        tech: [Tech.ts, Tech.tauri, Tech.svelte, Tech.rust, Tech.js, Tech.css, Tech.html, Tech.electron, Tech.hexo, Tech.mocha, Tech.chai, Tech.ffmpeg],
         year: "2019-now",
         tags: [Tag.personal, Tag.heavy, Tag.public],
         thumbnail: w2bThumb
