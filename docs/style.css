@@ -10,10 +10,11 @@ html {
     --main-purple: rgba(131,23,222,1);
     --main-pink: rgba(240,16,120,1);
     --blue-shadow: rgb(32, 103, 190);
-    --black-contrast: rgb(43, 49, 59);
+    --black-contrast: rgb(27, 42, 62);
+    --black-contrast-transparent: rgba(27, 42, 62, 0.8);
     --black-shadow: rgb(43, 49, 59);
     --main-black: rgb(19, 21, 26);
-    --main-black-transparent: rgb(19, 21, 26, 0.5);
+    --main-black-transparent: rgba(19, 21, 26, 0.5);
     --main-white: #ffffff;
 
     --linear-gradient: linear-gradient(132deg, rgba(0,188,245,1) 0%, rgba(131,23,222,1) 50%, rgba(240,16,120,1) 100%);
@@ -70,6 +71,7 @@ a.button {
 }
 a.button:hover {
     background-position: 0 100%;
+    box-shadow: 0 0 16px var(--main-pink);
 }
 
 h1 {
