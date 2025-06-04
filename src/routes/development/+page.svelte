@@ -35,7 +35,7 @@
 		<Project
 			href="/development/project/billiard"
 			projectInfo={ProjectInfo.billiard}
-			shadowColor="#e29400"
+			shadowColor="#01e300"
 		>
 			Billiard made from scratch, including the rendering of the objects through glu and the
 			development of a simple 3D engine.
@@ -102,7 +102,10 @@
 			words, with mistakes equivalent to those of a young child.
 		</Project>
 
-		<Project projectInfo={ProjectInfo.brocampia}>
+		<Project
+			projectInfo={ProjectInfo.brocampia}
+			shadowColor="#f4d9a2"
+		>
 			Decision tree based "old school" AI for the game Escampe (also known as Mana). UI and client
 			server interaction were provided.
 		</Project>
@@ -136,6 +139,7 @@
 		<Project
 			href="https://github.com/Picorims/app5-bruicolis-front"
 			projectInfo={ProjectInfo.bruicolis}
+			shadowColor="#0cba80"
 		>
 			Developed the front-end of a web application to manage a library of music tracks, and make tag
 			based playlists. Contributed a bit to the back-end routes (clean architecture, REST API), but
