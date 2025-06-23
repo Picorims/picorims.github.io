@@ -22,6 +22,7 @@
 
 		<Project
 			projectInfo={ProjectInfo.yourFirstMusicTrack}
+			shadowColor="#ffe493"
 			href="https://your-first-music-track.weebly.com/"
 		>
 			University English blog introducing music composition and production to people unfamiliar with
