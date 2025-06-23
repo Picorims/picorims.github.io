@@ -23,6 +23,7 @@ import bruicolisThumb from "$lib/assets/project_thumbnails/bruicolis_background.
 import musicBlogThumb from "$lib/assets/project_thumbnails/music_blog_background.png";
 import bloggingKitThumb from "$lib/assets/project_thumbnails/blogging_kit_background.png";
 import penpotPluginThumb from "$lib/assets/project_thumbnails/penpot_plugin_background.png";
+import cubicAdventureThumb from "$lib/assets/project_thumbnails/cubic_adventure_background.png";
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import dvThumb from "$lib/assets/project_thumbnails/divercity_background.png";
@@ -240,5 +241,13 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2024-2025",
         tags: [Tag.university, Tag.public, Tag.heavy],
         thumbnail: musicBlogThumb
+    },
+
+    cubicAdventure: {
+        name: "Cubic Adventure",
+        tech: [],
+        year: "2025",
+        tags: [Tag.personal, Tag.heavy, Tag.public],
+        thumbnail: cubicAdventureThumb
     }
 }

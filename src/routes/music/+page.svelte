@@ -37,5 +37,14 @@
 			A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images,
 			backgrounds, text, etc; and export your work as a production ready video.
 		</Project>
+
+		<Project
+			href="https://www.youtube.com/watch?v=ql_KpshKHP0"
+			shadowColor="#64f14f"
+			projectInfo={ProjectInfo.cubicAdventure}
+		>
+			A 13 minute long music track and video I made to explore concept music for the Minecraft Community Movie.
+			Album art is also by me.
+		</Project>
 	</ProjectList>
 </section>
