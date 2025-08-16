@@ -17,5 +17,7 @@
         width: 90%;
         max-width: 700px;
         margin: auto;
+        border-radius: var(--main-border-radius);
+        box-shadow: 0 0 16px var(--main-black);
     }
 </style>

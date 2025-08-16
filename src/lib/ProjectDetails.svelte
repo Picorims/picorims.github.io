@@ -56,8 +56,9 @@
         width: 90%;
         margin: 50px auto;
         padding: 20px;
-        background-color: var(--black-contrast);
+        background-color: var(--black-contrast-transparent);
         border-radius: var(--main-border-radius);
+        box-shadow: 0 0 16px var(--main-black);
     }
 
     h2 {
