@@ -6,8 +6,7 @@
     div.container {
         display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		/* align-items: stretch; */
+		justify-content: center;
 		gap: 50px;
     }
 </style>

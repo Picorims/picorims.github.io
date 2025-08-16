@@ -13,7 +13,7 @@
 
 <div class="project-container" style="box-shadow: 0 0px 24px {shadowColor}; --color: {shadowColor}">
     {#if (projectInfo && projectInfo.thumbnail) || background !== ""}
-        <img class="bgnd-img" src={projectInfo?.thumbnail || background} alt="{projectInfo?.name || title} thumbnail">
+        <img class="bgnd-img" src={projectInfo?.thumbnailSmall ?? projectInfo?.thumbnail ?? background} alt="{projectInfo?.name || title} thumbnail">
     {:else}
         <div class="bgnd-img">
             <i class="ri-image-fill"></i>
@@ -50,6 +50,7 @@
         display: block;
         flex: 1 0 auto;
         width: 300px;
+        max-width: 360px;
         min-height: 300px;
         border-radius: var(--main-border-radius);
         overflow: hidden;
