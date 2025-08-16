@@ -36,13 +36,15 @@
     a.container:hover {
         transform: scale(1.1);
         background-color: var(--black-contrast); /* Fallback for browsers that don't support oklch */
-        background-color: oklch(from var(--color) 10% 0.2 h);
+        background-color: oklch(from var(--color) 50% 0.2 h / 0.1);
         box-shadow: 0 0 32px var(--color);
     }
 
     h3 {
-        margin: 0;
+        margin: -8px;
         transition: 0.2s;
+        color: white; /* Fallback for browsers that don't support oklch */
+        color: oklch(from var(--color) 90% 0.1 h);
     }
 
     @media screen and (max-width: 460px) {

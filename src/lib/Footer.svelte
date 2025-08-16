@@ -24,7 +24,7 @@
             <!-- <SocialIcon href="https://twitter.com/picorims" icon="ri-twitter-fill" color="#1DA1F2"></SocialIcon> -->
         </p>
         <p>
-            Copyright (c) 2022-2023 Picorims.<br/>
+            Copyright (c) 2022-2025 Picorims.<br/>
             Icons are courtesy of <a href="https://remixicon.com/">Remix Icon <i class="ri-remixicon-fill"></i></a>.
         </p>
         <p></p>

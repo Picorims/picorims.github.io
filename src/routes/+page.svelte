@@ -23,7 +23,7 @@
     </p>
 </section>
 
-<section>
+<section id="categories">
     <h2>See what I am up to</h2>
     <div class="categories">
         <CategoryCard color={Color.BLUE} title="Development" icon="ri-code-s-slash-line" href="/development"></CategoryCard>
@@ -35,7 +35,9 @@
 <style>
     #banner {
         width: 100%;
+        margin-top: calc(0px - var(--header-height)); /* Negative margin to compensate for the header when scrolling beyond top (spring effect) */
         padding: 50px 5%;
+        padding-top: calc(var(--header-height) + 5%); /* We negate it with a padding */
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -43,6 +45,11 @@
 
         text-align: center;
         color: white;
+
+        background-image:
+            radial-gradient(ellipse at top left, var(--main-blue-transparent-light), transparent),
+            radial-gradient(ellipse at top right, var(--main-purple-transparent-light), transparent),
+            radial-gradient(ellipse at bottom, var(--main-pink-transparent-light), transparent);
     }
     #banner > div {
         flex: 1 1 auto;
@@ -147,9 +154,12 @@
         padding: 3rem 10%;
         font-size: 1.5rem;
         font-style: italic;
-        background-color: var(--black-contrast);
+        background-color: var(--main-black);
         line-height: 1.5em;
-        box-shadow: 0 0 8px var(--black-shadow);
+        box-shadow: 0 0 32px 24px var(--main-black);
+
+        position: relative;
+        z-index: 10;
     }
     #presentation > p {
         position: relative;
@@ -171,6 +181,16 @@
 
 
 
+    #categories {
+        background-image:
+            radial-gradient(ellipse at top left, var(--main-blue-transparent-light), transparent),
+            radial-gradient(ellipse at top right, var(--main-purple-transparent-light), transparent),
+            radial-gradient(ellipse at bottom, var(--main-pink-transparent-light), transparent);
+        padding-top: 32px;
+        padding-bottom: 64px;
+        margin-bottom: -50px; /* To compensate for the footer margin */
+    }
+
     div.categories {
         display: flex;
         justify-content: center;
@@ -178,4 +198,5 @@
         flex-wrap: wrap;
         padding: 0 10%;
     }
+
 </style>
