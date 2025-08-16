@@ -53,7 +53,8 @@
         min-height: 300px;
         border-radius: var(--main-border-radius);
         overflow: hidden;
-        background-color: var(--black-contrast);
+        background-color: var(--black-contrast-transparent);
+        background-image: radial-gradient(ellipse at center, transparent 0%, oklch(from var(--color) l c h / 0.1) 100%);
         border: 1px solid var(--color);
     }
     @media screen and (max-width: 460px) {
