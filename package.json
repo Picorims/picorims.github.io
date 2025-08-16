@@ -34,6 +34,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"remixicon": "^3.4.0"
+		"remixicon": "^4.6.0"
 	}
 }
