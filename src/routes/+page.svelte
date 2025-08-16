@@ -156,7 +156,7 @@
         font-style: italic;
         background-color: var(--main-black);
         line-height: 1.5em;
-        box-shadow: 0 0 32px 24px var(--main-black);
+        box-shadow: 0 0 32px 8px var(--main-black);
 
         position: relative;
         z-index: 10;
