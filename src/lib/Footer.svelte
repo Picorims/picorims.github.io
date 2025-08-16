@@ -22,9 +22,10 @@
             <SocialIcon href="https://www.youtube.com/@picorims" icon="ri-youtube-fill" color="#FF0000"></SocialIcon>
             <SocialIcon href="https://github.com/Picorims" icon="ri-github-fill"></SocialIcon>
             <!-- <SocialIcon href="https://twitter.com/picorims" icon="ri-twitter-fill" color="#1DA1F2"></SocialIcon> -->
+            <SocialIcon href="https://bsky.app/profile/picorims.bsky.social" icon="ri-bluesky-fill" color="#1DA1F2"></SocialIcon>
         </p>
         <p>
-            Copyright (c) 2022-2025 Picorims.<br/>
+            Copyright © 2022-2025 Picorims.<br/>
             Icons are courtesy of <a href="https://remixicon.com/">Remix Icon <i class="ri-remixicon-fill"></i></a>.
         </p>
         <p></p>
@@ -38,9 +39,9 @@
         width: 100%;
         padding: 1rem 10%;
         margin-top: 50px;
-        background-color: var(--black-contrast);
+        background-color: var(--main-black);
         text-align: left;
-        box-shadow: 0 0 8px var(--black-shadow);
+        box-shadow: 0 0 16px var(--main-black);
     }
 
     h2 {
@@ -64,5 +65,6 @@
 
     li {
         list-style-type: none;
+        margin-bottom: 0.5em;
     }
 </style>
