@@ -18,7 +18,7 @@
 <section id="presentation">
     <p>
         Hi, my name is Picorims, and I am a French computer science student
-        in apprenticeship at Polytech Paris-Saclay.
+        in apprenticeship at Polytech Paris-Saclay (graduating on September 2025).
         I also enjoy playing and making music!
     </p>
 </section>
