@@ -7,11 +7,20 @@
 html {
     font-family: 'Roboto Slab', sans-serif;
     --main-blue: rgba(0,188,245,1);
+    --main-blue-transparent: rgba(0,188,245,0.25);
+    --main-blue-transparent-light: rgba(0,188,245,0.1);
+    --main-blue-transparent-very-light: rgba(0,188,245,0.05);
     --main-purple: rgba(131,23,222,1);
+    --main-purple-transparent: rgba(131,23,222,0.25);
+    --main-purple-transparent-light: rgba(131,23,222,0.1);
+    --main-purple-transparent-very-light: rgba(131,23,222,0.05);
     --main-pink: rgba(240,16,120,1);
+    --main-pink-transparent: rgba(240,16,120,0.25);
+    --main-pink-transparent-light: rgba(240,16,120,0.1);
+    --main-pink-transparent-very-light: rgba(240,16,120,0.05);
     --blue-shadow: rgb(32, 103, 190);
-    --black-contrast: rgb(27, 42, 62);
-    --black-contrast-transparent: rgba(27, 42, 62, 0.8);
+    --black-contrast: rgb(39, 38, 71);
+    --black-contrast-transparent: rgba(39, 38, 71, 0.8);
     --black-shadow: rgb(43, 49, 59);
     --main-black: rgb(19, 21, 26);
     --main-black-transparent: rgba(19, 21, 26, 0.5);
