@@ -50,7 +50,10 @@
 		justify-content: space-between;
 		width: 100%;
 		min-height: var(--header-height);
-		background-color: var(--black-contrast-transparent);
+		/* background-color: var(--black-contrast-transparent); */
+		background-image:
+			linear-gradient(to bottom, rgba(0,0,0,0.35), transparent 60%),
+			linear-gradient(90deg, var(--main-blue-transparent), var(--main-purple-transparent), var(--main-pink-transparent));
 		backdrop-filter: blur(10px);
 
 		border-bottom: 3px solid;
@@ -107,6 +110,7 @@
 		text-decoration: none;
 		color: white;
 		font-size: 1.2rem;
+		text-shadow: 0 0 10px black;
 	}
 	nav.nav-pc a {
 		height: 100%;
