@@ -13,7 +13,7 @@
 
 <div class="project-container" style="box-shadow: 0 0px 24px {shadowColor}; --color: {shadowColor}">
     {#if (projectInfo && projectInfo.thumbnail) || background !== ""}
-        <img class="bgnd-img" src={projectInfo?.thumbnailSmall ?? projectInfo?.thumbnail ?? background} alt="{projectInfo?.name || title} thumbnail">
+        <img class="bgnd-img" srcset={`${projectInfo?.thumbnailSmall ?? projectInfo?.thumbnail ?? background}, ${projectInfo?.thumbnail ?? background} 2x`} alt="{projectInfo?.name || title} thumbnail">
     {:else}
         <div class="bgnd-img">
             <i class="ri-image-fill"></i>
