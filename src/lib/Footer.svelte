@@ -25,7 +25,7 @@
             <SocialIcon href="https://bsky.app/profile/picorims.bsky.social" icon="ri-bluesky-fill" color="#1DA1F2"></SocialIcon>
         </p>
         <p>
-            Copyright © 2022-2025 Picorims.<br/>
+            Copyright © 2022-2026 Picorims.<br/>
             Icons are courtesy of <a href="https://remixicon.com/">Remix Icon <i class="ri-remixicon-fill"></i></a>.
         </p>
         <p></p>

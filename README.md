@@ -45,7 +45,7 @@ You can preview the production build with `npm run preview`.
 
 ```
     Picorims personal website
-    Copyright (C) 2022-2023  Picorims alias Charly Schmidt
+    Copyright (C) 2022-2026  Picorims alias Charly Schmidt
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
