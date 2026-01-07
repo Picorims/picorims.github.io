@@ -44,6 +44,8 @@ import bloggingKitThumbSmall from "$lib/assets/project_thumbnails/blogging_kit_b
 import penpotPluginThumb from "$lib/assets/project_thumbnails/penpot_plugin_background.png";
 import penpotPluginThumbSmall from "$lib/assets/project_thumbnails/penpot_plugin_background@thumb.png";
 import cubicAdventureThumb from "$lib/assets/project_thumbnails/cubic_adventure_background.png";
+import openStreetKartThumb from "$lib/assets/project_thumbnails/open_street_kart_background.png";
+import openStreetKartThumbSmall from "$lib/assets/project_thumbnails/open_street_kart_background.png@thumb.png"
 
 import pzThumb from "$lib/assets/project_thumbnails/project_zearth_background.jpg";
 import pzThumbSmall from "$lib/assets/project_thumbnails/project_zearth_background@thumb.jpg";
@@ -126,6 +128,14 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.team, Tag.university, Tag.heavy],
         thumbnail: broccoliiThumb,
         thumbnailSmall: broccoliiThumbSmall
+    },
+    openStreetKart: {
+        name: "Open Street Kart - Kart game with real world maps",
+        tech: [Tech.godot, Tech.openstreetmap],
+        year: "2025-now",
+        tags: [Tag.personal, Tag.public, Tag.heavy],
+        thumbnail: openStreetKartThumb,
+        thumbnailSmall: openStreetKartThumbSmall,
     },
     broccolEVR: {
         name: "Broccol-E - VR game",

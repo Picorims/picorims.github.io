@@ -82,6 +82,14 @@
 		</Project>
 
 		<Project
+			href="https://github.com/Picorims/open-street-kart"
+			projectInfo={ProjectInfo.openStreetKart}
+			shadowColor="#0ef39fff"
+		>
+			An open-source arcade karting game where you drive in procedurally recreated real world places.
+		</Project>
+
+		<Project
 			href="https://github.com/nano1342/Broccol-E"
 			projectInfo={ProjectInfo.broccolEVR}
 			shadowColor="#2aeecd"
