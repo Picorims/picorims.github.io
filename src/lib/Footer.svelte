@@ -23,6 +23,7 @@
             <SocialIcon href="https://github.com/Picorims" icon="ri-github-fill"></SocialIcon>
             <!-- <SocialIcon href="https://twitter.com/picorims" icon="ri-twitter-fill" color="#1DA1F2"></SocialIcon> -->
             <SocialIcon href="https://bsky.app/profile/picorims.bsky.social" icon="ri-bluesky-fill" color="#1DA1F2"></SocialIcon>
+            <SocialIcon href="https://mastodon.social/@picorims" icon="ri-mastodon-fill" color="#6364FF"></SocialIcon>
         </p>
         <p>
             Copyright © 2022-2026 Picorims.<br/>
