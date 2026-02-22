@@ -8,7 +8,7 @@
 		<a id="logo" href="/" class="discreet">
 			<img width="197" height="197" src={profileIcon} alt="picorims icon" />
 		</a>
-		<a href="https://framaforms.org/would-you-donate-1771697595" class="discreet donate">Donate</a>
+		<a href="https://framaforms.org/would-you-donate-1771697595" target="_blank" rel="noopener noreferrer" class="discreet donate">Donate</a>
 	</div>
 	<nav class="nav-pc">
 		<a class="discreet" href="/">Home</a>
