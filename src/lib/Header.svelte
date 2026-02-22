@@ -4,9 +4,12 @@
 </script>
 
 <header>
-	<a id="logo" href="/" class="discreet">
-		<img width="197" height="197" src={profileIcon} alt="picorims icon" />
-	</a>
+	<div class="header-l">
+		<a id="logo" href="/" class="discreet">
+			<img width="197" height="197" src={profileIcon} alt="picorims icon" />
+		</a>
+		<a href="https://framaforms.org/would-you-donate-1771697595" class="discreet donate">Donate</a>
+	</div>
 	<nav class="nav-pc">
 		<a class="discreet" href="/">Home</a>
 		<a class="discreet" href="/development">Development</a>
@@ -60,6 +63,12 @@
 		border-image-slice: 1;
 		border-color: var(--main-blue);
 		border-image-source: var(--linear-gradient);
+	}
+
+	div.header-l {
+		display: flex;
+		align-items: center;
+		gap: 20px;
 	}
 
 	#logo {
@@ -170,8 +179,26 @@
 		cursor: pointer;
 	}
     nav.nav-mobile button:hover {
-        text-shadow: 0 0 4px white;
+		text-shadow: 0 0 4px white;
     }
+
+	a.donate {
+		margin-right: 20px;
+		padding: 0.5em 1em;
+		border: 2px solid var(--color-donate);
+		border-radius: 4px;
+		color: var(--color-donate);
+		font-weight: 900;
+		text-decoration: none;
+		box-shadow: 0 0 4px var(--color-donate);
+		
+		transition: 0.1s;
+	}
+	a.donate:hover {
+		background-color: var(--color-donate);
+		color: black;
+		box-shadow: 0 0 16px var(--color-donate);
+	}
 
 	@media screen and (max-width: 640px) {
 		nav.nav-pc {
@@ -181,4 +208,5 @@
 			display: initial;
 		}
 	}
+
 </style>
