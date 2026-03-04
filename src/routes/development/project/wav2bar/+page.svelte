@@ -8,24 +8,30 @@
 <ProjectHeader projectInfo={ProjectInfo.wav2bar} />
 
 <ProjectDetails projectInfo={ProjectInfo.wav2bar} href="https://picorims.github.io/wav2bar-website/">
-	<span slot="strengths">
-		<li>published</li>
-		<li>positive feedback from users and small activity</li>
-		<li>automated builds</li>
-	</span>
-	<span slot="weaknesses">
-		<li>architecture and tech debt</li>
-		<li>performance</li>
-		<li>lack of unit tests</li>
-	</span>
-	<span slot="explored">
-		<li>native web app</li>
-		<li>canvas and audio processing</li>
-		<li>custom components in pure HTML5 (standard API)</li>
-		<li>states</li>
-		<li>user interface</li>
-		<li>CI / CD</li>
-	</span>
+	{#snippet strengths()}
+		<span >
+			<li>published</li>
+			<li>positive feedback from users and small activity</li>
+			<li>automated builds</li>
+		</span>
+	{/snippet}
+	{#snippet weaknesses()}
+		<span >
+			<li>architecture and tech debt</li>
+			<li>performance</li>
+			<li>lack of unit tests</li>
+		</span>
+	{/snippet}
+	{#snippet explored()}
+		<span >
+			<li>native web app</li>
+			<li>canvas and audio processing</li>
+			<li>custom components in pure HTML5 (standard API)</li>
+			<li>states</li>
+			<li>user interface</li>
+			<li>CI / CD</li>
+		</span>
+	{/snippet}
 </ProjectDetails>
 
 <section>

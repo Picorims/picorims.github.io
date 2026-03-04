@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script module lang="ts">
     export enum Tech {
         cpp,
         opengl,
@@ -52,7 +52,7 @@
     }
 
     // FIXME: type as Record<Tech, TechObj>
-    let techDictionary: Array<TechObj> = [];
+    let techDictionary: Array<TechObj> = $state([]);
 
     // NB: some colors are tweak for legibility, but remain in the color palette of the corresponding trademark.
     // https://simpleicons.org/
@@ -337,8 +337,12 @@
         name: "OpenStreetMap"
     }
 
-    export let list: Array<Tech> = [];
-    export let withLabels: boolean = false;
+    interface Props {
+        list?: Array<Tech>;
+        withLabels?: boolean;
+    }
+
+    let { list = [], withLabels = false }: Props = $props();
 </script>
 
 {#if list.length > 0}

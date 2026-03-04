@@ -3,8 +3,21 @@
 	import TechList, {Tech} from "./TechList.svelte";
 	import type { ProjectData } from "./project_info";
 
-    export let projectInfo: ProjectData;
-    export let href = "";
+    interface Props {
+        projectInfo: ProjectData;
+        href?: string;
+        strengths?: import('svelte').Snippet;
+        weaknesses?: import('svelte').Snippet;
+        explored?: import('svelte').Snippet;
+    }
+
+    let {
+        projectInfo,
+        href = "",
+        strengths,
+        weaknesses,
+        explored
+    }: Props = $props();
 </script>
 
 <section class="project-header">
@@ -29,21 +42,21 @@
         <div class="pros">
             <p><strong>Strengths:</strong></p>
             <ul>
-                <slot name="strengths"></slot>
+                {@render strengths?.()}
             </ul>
         </div>
     
         <div class="cons">
             <p><strong>Weaknesses:</strong></p>
             <ul>
-                <slot name="weaknesses"></slot>
+                {@render weaknesses?.()}
             </ul>
         </div>
     </div>
 
     <p><strong>Explored:</strong></p>
     <ul>
-        <slot name="explored"></slot>
+        {@render explored?.()}
     </ul>
 
     {#if href !== ""}

@@ -1,7 +1,11 @@
 <script lang="ts">
 	import type { ProjectData } from "./project_info";
 
-    export let projectInfo: ProjectData;
+    interface Props {
+        projectInfo: ProjectData;
+    }
+
+    let { projectInfo }: Props = $props();
 </script>
 
 <header>

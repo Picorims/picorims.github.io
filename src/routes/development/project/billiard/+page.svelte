@@ -13,21 +13,27 @@
 <ProjectHeader projectInfo={ProjectInfo.billiard} />
 
 <ProjectDetails projectInfo={ProjectInfo.billiard} href="https://github.com/Picorims/app3-transverse-billiard">
-	<span slot="strengths">
-		<li>Accurate simple physics</li>
-	</span>
-	<span slot="weaknesses">
-		<li>Unintuitive controls</li>
-		<li>clipping in case of freezing (bad performance, moving the window)</li>
-		<li>Not very flexible architecture</li>
-	</span>
-	<span slot="explored">
-		<li>Writing a physics engine from scratch (I personally worked on sphere/sphere collision)</li>
-		<li>OpenGL rendering</li>
-	</span>
+	{#snippet strengths()}
+		<span >
+			<li>Accurate simple physics</li>
+		</span>
+	{/snippet}
+	{#snippet weaknesses()}
+		<span >
+			<li>Unintuitive controls</li>
+			<li>clipping in case of freezing (bad performance, moving the window)</li>
+			<li>Not very flexible architecture</li>
+		</span>
+	{/snippet}
+	{#snippet explored()}
+		<span >
+			<li>Writing a physics engine from scratch (I personally worked on sphere/sphere collision)</li>
+			<li>OpenGL rendering</li>
+		</span>
+	{/snippet}
 </ProjectDetails>
 
-<!-- svelte-ignore a11y-media-has-caption -->
+<!-- svelte-ignore a11y_media_has_caption -->
 <section>
 	<h2><Link href="https://github.com/Picorims/app3-transverse-billiard" text="GitHub" /></h2>
 

@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script module lang="ts">
     export enum Tag {
         team = "Team",
         university = "University",
@@ -9,7 +9,11 @@
 </script>
 
 <script lang="ts">
-    export let tagList: Array<Tag> = [];
+    interface Props {
+        tagList?: Array<Tag>;
+    }
+
+    let { tagList = [] }: Props = $props();
 </script>
 
 <span>

@@ -1,7 +1,11 @@
 <script lang="ts">
-    export let href = "/";
-    export let icon = "";
-    export let color = "white";
+    interface Props {
+        href?: string;
+        icon?: string;
+        color?: string;
+    }
+
+    let { href = "/", icon = "", color = "white" }: Props = $props();
 </script>
 
 <a class="discreet" href={href}><i class={icon} style="color: {color};"></i></a>

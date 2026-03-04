@@ -13,25 +13,31 @@
 <ProjectHeader projectInfo={ProjectInfo.projector} />
 
 <ProjectDetails projectInfo={ProjectInfo.projector} href="https://github.com/Picorims/pi-projector">
-	<span slot="strengths">
-		<li>Adjusts itself to hardware speed</li>
-		<li>Supports all codecs supported by FFmpeg</li>
-		<li>Many debugging options</li>
-	</span>
-	<span slot="weaknesses">
-		<li>No stable frame output</li>
-		<li>Unfinished bus communication (no synchronization or message system)</li>
-		<li>Dirty file structure</li>
-		<li>On the Raspberry Pi, a third of the pixels are lost despite multithreading and vectorized operations.</li>
-	</span>
-	<span slot="explored">
-		<li>Raspberry Pi development.</li>
-		<li>working with other fields (materials, optronics, electronics) in a common project.</li>
-		<li>Video manipulation.</li>
-	</span>
+	{#snippet strengths()}
+		<span >
+			<li>Adjusts itself to hardware speed</li>
+			<li>Supports all codecs supported by FFmpeg</li>
+			<li>Many debugging options</li>
+		</span>
+	{/snippet}
+	{#snippet weaknesses()}
+		<span >
+			<li>No stable frame output</li>
+			<li>Unfinished bus communication (no synchronization or message system)</li>
+			<li>Dirty file structure</li>
+			<li>On the Raspberry Pi, a third of the pixels are lost despite multithreading and vectorized operations.</li>
+		</span>
+	{/snippet}
+	{#snippet explored()}
+		<span >
+			<li>Raspberry Pi development.</li>
+			<li>working with other fields (materials, optronics, electronics) in a common project.</li>
+			<li>Video manipulation.</li>
+		</span>
+	{/snippet}
 </ProjectDetails>
 
-<!-- svelte-ignore a11y-media-has-caption -->
+<!-- svelte-ignore a11y_media_has_caption -->
 <section>
 	<h2><Link href="https://github.com/Picorims/pi-projector" text="GitHub" /></h2>
 

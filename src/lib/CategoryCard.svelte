@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script module lang="ts">
     export enum Color {
         BLUE = "blue",
         PURPLE = "purple",
@@ -7,10 +7,19 @@
 </script>
 
 <script lang="ts">
-    export let title = "title";
-    export let color: Color = Color.BLUE;
-    export let href = "/";
-    export let icon = "";
+    interface Props {
+        title?: string;
+        color?: Color;
+        href?: string;
+        icon?: string;
+    }
+
+    let {
+        title = "title",
+        color = Color.BLUE,
+        href = "/",
+        icon = ""
+    }: Props = $props();
 </script>
 
 <a class="container discreet" href={href} style="color: var(--main-{color}); --color: var(--main-{color})">

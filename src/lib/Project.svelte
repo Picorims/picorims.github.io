@@ -3,12 +3,25 @@
 	import TechList, {Tech} from "./TechList.svelte";
 	import type { ProjectData } from "./project_info";
     
-    export let title = "title";
-    export let href = "/";
-    export let shadowColor = "var(--blue-shadow)";
-    export let background = "";
-    export let techList: Array<Tech> = [];
-    export let projectInfo: ProjectData | null = null;
+    interface Props {
+        title?: string;
+        href?: string;
+        shadowColor?: string;
+        background?: string;
+        techList?: Array<Tech>;
+        projectInfo?: ProjectData | null;
+        children?: import('svelte').Snippet;
+    }
+
+    let {
+        title = "title",
+        href = "/",
+        shadowColor = "var(--blue-shadow)",
+        background = "",
+        techList = [],
+        projectInfo = null,
+        children
+    }: Props = $props();
 </script>
 
 <div class="project-container" style="box-shadow: 0 0px 24px {shadowColor}; --color: {shadowColor}">
@@ -35,7 +48,7 @@
         <TechList list={projectInfo?.tech || techList}></TechList>
         
         <p>
-            <slot></slot>
+            {@render children?.()}
         </p>
         
         {#if href !== "/"}

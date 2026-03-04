@@ -1,5 +1,5 @@
 <script lang="ts">
-	let menuVisible = false;
+	let menuVisible = $state(false);
     import profileIcon from "$lib/assets/profile_icon.png";
 </script>
 
@@ -18,22 +18,22 @@
 	</nav>
 	<nav class="nav-mobile">
 		<button
-			on:click={() => {
+			onclick={() => {
 				menuVisible = !menuVisible;
 			}}
 		>
 			{#if menuVisible}
-				<i class="ri-close-line" />
+				<i class="ri-close-line"></i>
 			{:else}
-				<i class="ri-menu-line" />
+				<i class="ri-menu-line"></i>
 			{/if}
 		</button>
-		<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 		<div
 			class="nav-content"
 			style="display: {menuVisible ? 'flex' : 'none'}"
-			on:click={() => (menuVisible = false)}
-			on:keydown={(e) => {if (e.key === "Enter") menuVisible = false}}
+			onclick={() => (menuVisible = false)}
+			onkeydown={(e) => {if (e.key === "Enter") menuVisible = false}}
             role="navigation"
 		>
 			<a class="discreet" href="/">Home</a>

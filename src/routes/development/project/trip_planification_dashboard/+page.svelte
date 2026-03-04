@@ -11,22 +11,28 @@
 <ProjectHeader projectInfo={ProjectInfo.tripDashboard} />
 
 <ProjectDetails projectInfo={ProjectInfo.tripDashboard}>
-	<span slot="strengths">
-		<li>High customization</li>
-		<li>Modular</li>
-	</span>
-	<span slot="weaknesses">
-		<li>Not secure</li>
-		<li>Unstable</li>
-		<li>Complex architecture (two development servers)</li>
-	</span>
-	<span slot="explored">
-		<li>Editable dashboard component</li>
-		<li>Discovering Angular</li>
-	</span>
+	{#snippet strengths()}
+		<span >
+			<li>High customization</li>
+			<li>Modular</li>
+		</span>
+	{/snippet}
+	{#snippet weaknesses()}
+		<span >
+			<li>Not secure</li>
+			<li>Unstable</li>
+			<li>Complex architecture (two development servers)</li>
+		</span>
+	{/snippet}
+	{#snippet explored()}
+		<span >
+			<li>Editable dashboard component</li>
+			<li>Discovering Angular</li>
+		</span>
+	{/snippet}
 </ProjectDetails>
 
-<!-- svelte-ignore a11y-media-has-caption -->
+<!-- svelte-ignore a11y_media_has_caption -->
 <section>
 	<h2>Small demo of the dashboard modification</h2>
 

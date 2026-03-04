@@ -1,11 +1,20 @@
 <script lang="ts">
-    export let src = "";
-    export let loop = true;
-    export let type = "video/mp4";
-    export let width: number | undefined = undefined;
+    interface Props {
+        src?: string;
+        loop?: boolean;
+        type?: string;
+        width?: number | undefined;
+    }
+
+    let {
+        src = "",
+        loop = true,
+        type = "video/mp4",
+        width = undefined
+    }: Props = $props();
 </script>
 
-<!-- svelte-ignore a11y-media-has-caption -->
+<!-- svelte-ignore a11y_media_has_caption -->
 <video {loop} preload="metadata" controls {width}>
     <source {src} {type}>
 </video>
