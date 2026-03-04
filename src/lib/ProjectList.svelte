@@ -127,6 +127,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
     }
 
     label.togglable-tech, label.togglable-tag {
@@ -155,6 +156,7 @@
     }
 
     label.togglable-tech {
+        margin: 0;
         color: oklch(from var(--tech-color, var(--main-white)) calc(l + 0.5) c h);
         /* border: 1px solid oklch(from var(--tech-color, var(--main-white)) calc(l - 0.15) c h); */
         border: 1px solid oklch(from var(--main-black) calc(l + 0.2) c h);
