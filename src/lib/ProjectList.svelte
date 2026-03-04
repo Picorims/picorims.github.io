@@ -56,11 +56,13 @@
                     {@const techKey = Tech[tech as unknown as Tech] as unknown as Tech}
 
                     <label class="togglable-tech" style="--tech-color: {techList[techKey].color}">
+                    <span class="input-and-text">
                         <input type="checkbox" name={tech} value={tech} onchange={() => toggleTech(tech)} />
                         {tech}
-                        <span class="icon" style:fill={techList[techKey].color}>
-                            {@html techList[techKey].icon}
-                        </span>
+                    </span>
+                    <span class="icon" style:fill={techList[techKey].color}>
+                        {@html techList[techKey].icon}
+                    </span>
                     </label>
                 {/each}
             </div>
@@ -156,6 +158,7 @@
     }
 
     label.togglable-tech {
+        justify-content: space-between;
         margin: 0;
         color: oklch(from var(--tech-color, var(--main-white)) calc(l + 0.5) c h);
         /* border: 1px solid oklch(from var(--tech-color, var(--main-white)) calc(l - 0.15) c h); */
@@ -168,6 +171,14 @@
         background-color: var(--main-blue);
         color: var(--main-black);
     }
+    label.togglable-tech:hover {
+        background-color: var(--main-blue-transparent);
+    }
+    label.togglable-tech span.input-and-text {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25em;
+    }
 
     input[type="checkbox"] {
         width: 16px;
@@ -176,16 +187,15 @@
     }
 
     span.icon {
-        display: inline-block;
-        width: 1.25em;
-        height: 1.25em;
-        margin: 0 0.25em;
-        margin-left: 0.5em;
+        display: block;
+        width: 1.75em;
+        height: 1.75em;
+        margin-left: 0.75em;
     }
 
     label.togglable-tech:has(input:checked) span.icon {
         background-color: var(--main-black);
-        box-shadow: 0 0 0 3px var(--main-black);
+        outline: 2px solid var(--main-black);
         border-radius: var(--subtle-border-radius);
     }
 
