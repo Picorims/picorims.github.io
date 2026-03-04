@@ -1,3 +1,17 @@
 {
-    "svelte.enable-ts-plugin": true
+    "svelte.enable-ts-plugin": true,
+    "cSpell.words": [
+        "brocampia",
+        "broccolii",
+        "bruicolis",
+        "cursorophone",
+        "directogallery",
+        "divercity",
+        "Escampe",
+        "GLSL",
+        "Inkscape",
+        "Mobilités",
+        "penpot",
+        "Zearth"
+    ]
 }
