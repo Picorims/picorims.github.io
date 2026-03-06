@@ -1,0 +1,1 @@
+import{a as t,f as e}from"../chunks/BSlNUxOX.js";import"../chunks/DWX4up-w.js";import{n as p}from"../chunks/B_xep0A2.js";var r=e('<h1>404</h1> <p class="svelte-15h4f4n">Not Found</p> <p class="svelte-15h4f4n"><a href="/">Go back home</a></p>',1);function f(o){var a=r();p(4),t(o,a)}export{f as component};

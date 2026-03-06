@@ -1,0 +1,2 @@
+import{a as t,f as i}from"../chunks/BSlNUxOX.js";import"../chunks/DWX4up-w.js";import{s,f as m,c,r as n}from"../chunks/B_xep0A2.js";import"../chunks/BR5YCba7.js";import{P as p}from"../chunks/BWsJSDD6.js";var l=i(`<h1>Music</h1> <section><p>Most of my music is private (sorry!), however some very few (rather old) tracks are available
+		online. Maybe one day I'll publish old projects, who knows.</p> <!></section>`,1);function u(a){var o=l(),r=s(m(o),2),e=s(c(r),2);p(e,{category:"music"}),n(r),t(a,o)}export{u as component};

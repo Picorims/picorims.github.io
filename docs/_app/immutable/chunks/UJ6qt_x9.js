@@ -1,0 +1,1 @@
+import{t as c}from"./D9aui2Jx.js";import{m as i}from"./B_xep0A2.js";function m(s,f,r,a,o,l){var e=s.__className;if(i||e!==r||e===void 0){var t=c(r,a);(!i||t!==s.getAttribute("class"))&&(t==null?s.removeAttribute("class"):s.className=t),s.__className=r}return l}const u=""+new URL("../assets/profile_icon.DRFP3TvM.png",import.meta.url).href;export{u as p,m as s};
