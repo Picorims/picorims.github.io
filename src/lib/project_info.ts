@@ -232,7 +232,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.personal, Tag.public],
         thumbnail: gpsThumb,
         thumbnailSmall: gpsThumbSmall,
-        href: "https://picorims.github.io/network-graph-display/",
+        // href: "https://picorims.github.io/network-graph-display/",
         description: "Display a network graph on top of a given background, and allow to perform Dijkstra's algorithm on selected nodes. Built on top of the network graph from bitmap project."
     },
     networkGraphFromBitmap: {
