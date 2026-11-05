@@ -5,6 +5,10 @@
         personal = "Personal",
         heavy = "Heavy",
         public = "Public",
+        ai_remnants_asserted = "Asserted AI Remnants",
+        ai_remnants_possible = "Possible AI Remnants",
+        ai_remnants_possible_from_others = "Possible AI remnants from others",
+        ai_free = "No AI used",
     }
 </script>
 
@@ -27,6 +31,7 @@
         display: inline-block;
         padding: 0.1em 0.2em;
         margin-right: 0.25em;
+        margin-bottom: 0.25em;
         color: var(--main-blue);
         font-weight: bold;
         background-color: var(--main-black-transparent);
