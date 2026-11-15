@@ -354,7 +354,7 @@
             </span>
 
             {#if withLabels}
-                <span>{techList[tech].name}</span>
+                <span class="label">{techList[tech].name}</span>
                 {#if i < list.length-1}
                 ,
                 {/if}    
@@ -383,5 +383,8 @@
         width: 1.5rem;
         height: 1.5rem;
         margin: 0 0.25em;
+    }
+    span.label {
+        color: var(--color-text-darker-2);
     }
 </style>

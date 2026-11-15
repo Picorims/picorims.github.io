@@ -35,6 +35,7 @@ html {
     --color-background-contrast: rgb(16, 21, 30);
     --color-background-contrast-transparent: rgba(39, 38, 71, 0.8);
     --color-background-contrast-lighter-1: oklch(from var(--color-background-contrast) calc(l + 0.15) c h);
+    --color-background-contrast-darker-1: oklch(from var(--color-background-contrast) calc(l - 0.025) c h);
     --color-black-shadow: rgb(16, 18, 22);
     --color-background: rgb(9, 35, 36);
     --color-background-transparent: rgb(from var(--color-background) r g b / 0.5);

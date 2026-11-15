@@ -240,7 +240,7 @@
         top: 0;
         left: 0;
         overflow: visible;
-        border: 12px solid oklch(from var(--color-background-contrast) calc(l - 0.025) c h);
+        border: 12px solid var(--color-background-contrast-darker-1);
         pointer-events: none;
     }
     svg.corner-circle {

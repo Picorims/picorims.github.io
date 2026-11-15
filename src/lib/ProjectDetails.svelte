@@ -25,7 +25,7 @@
 
     <p>
         <strong>Year: </strong>
-        <span>{projectInfo.year}</span>
+        <span class="year">{projectInfo.year}</span>
     </p>
 
     <p>
@@ -69,14 +69,19 @@
         width: 90%;
         margin: 50px auto;
         padding: 20px;
-        background-color: var(--black-contrast-transparent);
+        background-color: var(--color-background-contrast);
         border-radius: var(--main-border-radius);
-        box-shadow: 0 0 16px var(--main-black);
+        box-shadow: 0 0 16px var(--color-background);
+        border: 12px solid var(--color-background-contrast-darker-1);
     }
 
     h2 {
         margin: 0;
         margin-bottom: 0.25em;
+    }
+
+    span.year {
+        color: var(--color-text-darker-1);
     }
     
     p {
@@ -91,7 +96,6 @@
     p strong {
         font-size: 1.2em;
         margin-right: 0.25em;
-        text-decoration: underline var(--main-blue);
     }
 
     div.pros-cons {
@@ -120,6 +124,7 @@
 
     ul {
         margin-top: 0.2em;
+        color: var(--color-text-darker-1);
     }
     div.pros ul {
         list-style-type: "✓ ";
