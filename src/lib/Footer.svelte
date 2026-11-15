@@ -64,6 +64,7 @@
         padding: 3rem 10%;
         margin-top: 50px;
         text-align: left;
+        overflow: hidden;
         /* box-shadow: 0 0 16px var(--color-background); */
     }
 
@@ -73,7 +74,7 @@
         top: 0;
         left: -10%;
         width: 120%;
-        height: 150%;
+        height: 120%;
         z-index: -1;
         overflow: hidden;
         filter: url(#water-filter);

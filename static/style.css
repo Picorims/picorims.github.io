@@ -6,7 +6,7 @@
 
 html {
     font-family: 'Roboto Slab', sans-serif;
-    --color-primary: rgb(0, 255, 28);
+    --color-primary: rgb(105, 250, 122);
     --color-primary-transparent: rgb(from var(--color-primary) r g b / 0.25);
     --color-primary-transparent-light: rgb(from var(--color-primary) r g b / 0.1);
     --color-primary-transparent-very-light: rgb(from var(--color-primary) r g b / 0.05);
