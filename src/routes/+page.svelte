@@ -128,7 +128,7 @@
         /* border-radius: var(--shadow-size); */
         background: var(--color-primary);
         background: var(--linear-gradient);
-        filter: blur(4px);
+        filter: blur(24px);
         transition: 0.1s;
         animation: profileBubble 30s ease-in-out 0s infinite;
     }
@@ -145,6 +145,15 @@
     @keyframes floatL {
         0%, 100% {left: -7px;}
         50% {left: 7px;}
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #profile-icon > img {
+            animation: none;
+        }
+        div.banner-right {
+            animation: none;
+        }
     }
 
 
