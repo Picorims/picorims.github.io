@@ -14,7 +14,7 @@
     <div class="background">
         <Fishes />
     </div>
-    <div>
+    <div class="content">
         <h2>Navigation</h2>
         <nav>
             <ul>
@@ -25,7 +25,7 @@
             </ul>
         </nav>
     </div>
-    <div>
+    <div class="content">
         <h2>Contact</h2>
         <p><a id="email" href="mailto:picorims.contact@gmail.com">picorims.contact@gmail.com</a></p>
         <p>
@@ -62,7 +62,9 @@
         flex-wrap: wrap;
         width: 100%;
         padding: 3rem 10%;
+        padding-top: 5rem;
         margin-top: 50px;
+        gap: 1rem;
         text-align: left;
         overflow: hidden;
         /* box-shadow: 0 0 16px var(--color-background); */
@@ -152,11 +154,15 @@
         }
     }
 
-    feTurbulence {
-        animation: 1s ease-in-out animMovement infinite;
+    div.content {
+        background-color: var(--color-background-contrast-transparent-very-light);
+        padding: 1rem;
+        backdrop-filter: blur(6px);
+        border-radius: var(--main-border-radius);
     }
 
     h2 {
+        margin-top: 0;
         font-size: 1.25rem;
         text-align: left;
     }
