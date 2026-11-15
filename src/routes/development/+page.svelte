@@ -68,6 +68,6 @@
 	}
 	strong.emphasis {
 		text-decoration: underline;
-		color: var(--main-pink);
+		color: var(--color-tertiary);
 	}
 </style>

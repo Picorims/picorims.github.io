@@ -22,10 +22,10 @@
     }
 
     :global(body) {
-        background-color: var(--main-black);
+        background-color: var(--color-background);
         background-image: 
-            repeating-linear-gradient(60deg, transparent, var(--main-blue-transparent-very-light) 1100px, transparent 2200px),
-            repeating-linear-gradient(30deg, transparent, var(--main-purple-transparent-very-light) 800px, transparent 1600px),
-            repeating-linear-gradient(45deg, transparent, var(--main-pink-transparent-very-light) 1300px, transparent 2600px);
+            repeating-linear-gradient(60deg, transparent, var(--color-primary-transparent-very-light) 1100px, transparent 2200px),
+            repeating-linear-gradient(30deg, transparent, var(--color-secondary-transparent-very-light) 800px, transparent 1600px),
+            repeating-linear-gradient(45deg, transparent, var(--color-tertiary-transparent-very-light) 1300px, transparent 2600px);
     }
 </style>

@@ -1,8 +1,8 @@
 <script module lang="ts">
     export enum Color {
-        BLUE = "blue",
-        PURPLE = "purple",
-        PINK = "pink",
+        BLUE = "primary",
+        PURPLE = "secondary",
+        PINK = "tertiary",
     };
 </script>
 
@@ -22,7 +22,7 @@
     }: Props = $props();
 </script>
 
-<a class="container discreet" href={href} style="color: var(--main-{color}); --color: var(--main-{color})">
+<a class="container discreet" href={href} style="color: var(--color-{color}); --color: var(--color-{color})">
     <i class={icon}></i>
     <h3>{title}</h3>
 </a>
@@ -52,7 +52,7 @@
     h3 {
         margin: -8px;
         transition: 0.2s;
-        color: white; /* Fallback for browsers that don't support oklch */
+        color: var(--color-text); /* Fallback for browsers that don't support oklch */
         color: oklch(from var(--color) 90% 0.1 h);
     }
 

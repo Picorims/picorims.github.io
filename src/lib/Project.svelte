@@ -99,7 +99,7 @@
         align-items: center;
         justify-content: center;
         font-size: 5rem;
-        background-color: var(--main-black);
+        background-color: var(--color-background);
         color: var(--black-contrast);
     }
 

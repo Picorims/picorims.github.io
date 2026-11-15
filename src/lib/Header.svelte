@@ -56,12 +56,12 @@
 		/* background-color: var(--black-contrast-transparent); */
 		background-image:
 			linear-gradient(to bottom, rgba(0,0,0,0.35), transparent 60%),
-			linear-gradient(90deg, var(--main-blue-transparent), var(--main-purple-transparent), var(--main-pink-transparent));
+			linear-gradient(90deg, var(--color-primary-transparent), var(--color-secondary-transparent), var(--color-tertiary-transparent));
 		backdrop-filter: blur(10px);
 
 		border-bottom: 3px solid;
 		border-image-slice: 1;
-		border-color: var(--main-blue);
+		border-color: var(--color-primary);
 		border-image-source: var(--linear-gradient);
 	}
 
@@ -93,7 +93,7 @@
 		width: var(--shadow-size);
 		height: var(--shadow-size);
 		border-radius: var(--shadow-size);
-		background: var(--main-blue);
+		background: var(--color-primary);
 		background: var(--linear-gradient);
 		filter: blur(2px);
 		transition: 0.1s;
@@ -133,12 +133,12 @@
 		width: 0;
 		content: '';
 		height: 2px;
-		background-color: var(--main-blue);
-		box-shadow: 0 0 4px var(--main-blue);
+		background-color: var(--color-primary);
+		box-shadow: 0 0 4px var(--color-primary);
 		transition: 0.1s;
 	}
 	nav.nav-mobile a::after {
-		background-color: var(--main-purple);
+		background-color: var(--color-secondary);
 		height: 100%;
 		z-index: -1;
 		transition: 0.2s;

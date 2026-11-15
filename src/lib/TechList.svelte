@@ -369,7 +369,7 @@
         display: inline-flex;
         flex-wrap: wrap;
         align-items: center;
-        background-color: var(--main-black);
+        background-color: var(--color-background);
         padding: 0.5em;
         gap: 0.25em;
         border-radius: var(--subtle-border-radius);

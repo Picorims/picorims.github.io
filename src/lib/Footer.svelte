@@ -40,9 +40,9 @@
         width: 100%;
         padding: 1rem 10%;
         margin-top: 50px;
-        background-color: var(--main-black);
+        background-color: var(--color-background);
         text-align: left;
-        box-shadow: 0 0 16px var(--main-black);
+        box-shadow: 0 0 16px var(--color-background);
     }
 
     h2 {

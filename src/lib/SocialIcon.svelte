@@ -14,7 +14,7 @@
     a {
         display: inline-block;
         transform: scale(1); /*makes the shadow work for some reason*/
-        color: white;
+        color: var(--color-text);
         text-decoration: none;
         font-size: 1.5rem;
         transition: 0.1s;
@@ -25,7 +25,7 @@
         position: relative;
         padding: 0.25em;
         border-radius: 50px;
-        background-color: var(--main-black);
+        background-color: var(--color-background);
         transition: 0.1s;
     }
 
@@ -39,13 +39,13 @@
         width: var(--shadow-size);
         height: var(--shadow-size);
         border-radius: var(--shadow-size);
-        background: var(--main-blue);
+        background: var(--color-primary);
         background: var(--linear-gradient);
         filter: blur(2px);
         transition: 0.1s;
     }
 
     a:hover i {
-        color: white !important;
+        color: var(--color-text) !important;
     }
 </style>

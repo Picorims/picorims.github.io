@@ -44,12 +44,12 @@
         justify-content: center;
 
         text-align: center;
-        color: white;
+        color: var(--color-text);
 
         background-image:
-            radial-gradient(ellipse at top left, var(--main-blue-transparent-light), transparent),
-            radial-gradient(ellipse at top right, var(--main-purple-transparent-light), transparent),
-            radial-gradient(ellipse at bottom, var(--main-pink-transparent-light), transparent);
+            radial-gradient(ellipse at top left, var(--color-primary-transparent-light), transparent),
+            radial-gradient(ellipse at top right, var(--color-secondary-transparent-light), transparent),
+            radial-gradient(ellipse at bottom, var(--color-tertiary-transparent-light), transparent);
     }
     #banner > div {
         flex: 1 1 auto;
@@ -126,7 +126,7 @@
         width: var(--shadow-size);
         height: var(--shadow-size);
         /* border-radius: var(--shadow-size); */
-        background: var(--main-blue);
+        background: var(--color-primary);
         background: var(--linear-gradient);
         filter: blur(4px);
         transition: 0.1s;
@@ -154,9 +154,9 @@
         padding: 3rem 10%;
         font-size: 1.5rem;
         font-style: italic;
-        background-color: var(--main-black);
+        background-color: var(--color-background);
         line-height: 1.5em;
-        box-shadow: 0 0 32px 8px var(--main-black);
+        box-shadow: 0 0 32px 8px var(--color-background);
 
         position: relative;
         z-index: 10;
@@ -172,20 +172,20 @@
     #presentation > p::before {
         content: "“";
         left: -0.5em;
-        color: var(--main-blue);
+        color: var(--color-primary);
     }
     #presentation > p::after {
         content: "”";
-        color: var(--main-pink);
+        color: var(--color-tertiary);
     }
 
 
 
     #categories {
         background-image:
-            radial-gradient(ellipse at top left, var(--main-blue-transparent-light), transparent),
-            radial-gradient(ellipse at top right, var(--main-purple-transparent-light), transparent),
-            radial-gradient(ellipse at bottom, var(--main-pink-transparent-light), transparent);
+            radial-gradient(ellipse at top left, var(--color-primary-transparent-light), transparent),
+            radial-gradient(ellipse at top right, var(--color-secondary-transparent-light), transparent),
+            radial-gradient(ellipse at bottom, var(--color-tertiary-transparent-light), transparent);
         padding-top: 32px;
         padding-bottom: 64px;
         margin-bottom: -50px; /* To compensate for the footer margin */

@@ -32,10 +32,10 @@
         padding: 0.1em 0.2em;
         margin-right: 0.25em;
         margin-bottom: 0.25em;
-        color: var(--main-blue);
+        color: var(--color-primary);
         font-weight: bold;
-        background-color: var(--main-black-transparent);
-        border: 1px solid var(--main-blue);
+        background-color: var(--color-background-transparent);
+        border: 1px solid var(--color-primary);
         border-radius: var(--subtle-border-radius);
     }
 </style>
