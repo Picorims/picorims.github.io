@@ -1,5 +1,6 @@
 <script lang="ts">
-    import TagList from "./TagList.svelte";
+    import ColorizeSVGFilter from "./ColorizeSVGFilter.svelte";
+import TagList from "./TagList.svelte";
 	import TechList, {Tech} from "./TechList.svelte";
 	import { ProjectInfo, ProjectKind, type ProjectData } from "./project_info";
 
@@ -27,22 +28,6 @@
     }: Props = $props();
 
     let kind: ProjectKind = $derived(projectInfo?.kind ?? ProjectKind.UNKNOWN);
-    
-    let rgbRatioColor: [number, number, number] = $derived((() => {
-        const rStr = shadowColor.slice(1, 3);
-        const gStr = shadowColor.slice(3, 5);
-        const bStr = shadowColor.slice(5, 7);
-        let r = parseInt(rStr, 16);
-        let g = parseInt(gStr, 16);
-        let b = parseInt(bStr, 16);
-
-        // // make darker
-        // r *= 0.2;
-        // g *= 0.2;
-        // b *= 0.2;
-
-        return [r / 256, g / 256, b / 256];
-    })());
 </script>
 
 {#snippet circle(radius: number, cssClass: string)}
@@ -182,14 +167,7 @@
         {/if}
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-        <filter id={`pattern-filter-${key}`}>
-            <feColorMatrix in="SourceGraphic" type="matrix" values={`${rgbRatioColor[0]} 0 0 0 0
-                                                                     0 ${rgbRatioColor[1]} 0 0 0
-                                                                     0 0 ${rgbRatioColor[2]} 0 0
-                                                                     0 0 0 0 0.15`}></feColorMatrix>
-        </filter>
-    </svg>
+    <ColorizeSVGFilter {key} color={shadowColor} />
 </div>
 
 
@@ -219,7 +197,7 @@
         padding: 0.5rem;
         padding-top: 0.25rem;
     }
-    div.background{
+    div.background {
         position: absolute;
         width: 200%;
         height: 200%;

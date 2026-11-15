@@ -60,8 +60,8 @@
         font-size: 3rem;
         margin-top: 0;
         margin-bottom: 0.25em;
-        text-transform: uppercase;
         transition: 0.2s;
+        font-variant-caps: small-caps;
     }
 
     #email {
@@ -154,6 +154,7 @@
         padding: 3rem 10%;
         font-size: 1.5rem;
         font-style: italic;
+        font-weight: 300;
         background-color: var(--color-background);
         line-height: 1.5em;
         box-shadow: 0 0 32px 8px var(--color-background);
@@ -167,11 +168,13 @@
     #presentation > p::before, #presentation > p::after {
         position: absolute;
         display: inline-block;
+        font-family: 'Times New Roman', Times, serif;
         font-size: 2em;
+        font-weight: bold;
     }
     #presentation > p::before {
         content: "“";
-        left: -0.5em;
+        left: -0.6em;
         color: var(--color-primary);
     }
     #presentation > p::after {
