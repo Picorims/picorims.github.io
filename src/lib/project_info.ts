@@ -64,6 +64,24 @@ export interface ProjectData {
     readonly shadowColor?: string,
     readonly href?: string,
     readonly description?: string,
+    readonly kind?: ProjectKind,
+}
+
+export enum ProjectKind {
+    GAME = "game",
+    UNKNOWN = "unknown",
+    RENDERING = "rendering",
+    WEB = "web",
+    PHYSICS = "physics",
+    SOFTWARE = "software",
+    TOOL = "tool",
+    APP = "app",
+    PLUGIN = "plugin",
+    VR = "vr",
+    AI = "ai",
+    MINECRAFT = "minecraft",
+    MUSIC = "music",
+    BLOG = "blog",
 }
 
 export const ProjectInfo: {[index: string]: ProjectData} = {
@@ -74,8 +92,9 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tech: [Tech.ts, Tech.css, Tech.html, Tech.svelte],
         year: "2019-now",
         tags: [Tag.personal, Tag.public, Tag.ai_remnants_asserted],
-        shadowColor: "rgba(240,16,120,1)",
+        shadowColor: "#f01078",
         description: "From a single HTML file to a Svelte static website.",
+        kind: ProjectKind.WEB,
     },
     wav2bar: {
         categories: ["dev", "music"],
@@ -87,7 +106,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: w2bThumbSmall,
         shadowColor: "#06a4fa",
         href: "/development/project/wav2bar",
-        description: "A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images, backgrounds, text, etc; and export your work as a production ready video."
+        description: "A free, open source audio visualizer creator. Add visualizers, timers, particle flows, images, backgrounds, text, etc; and export your work as a production ready video.",
+        kind: ProjectKind.SOFTWARE,
     },
     tripDashboard: {
         categories: ["dev"],
@@ -99,7 +119,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: dashboardThumbSmall,
         href: "/development/project/trip_planification_dashboard",
         shadowColor: "#ffb800",
-        description: "Customizable dashboard (size and position of cards) designed to display data about a given location."
+        description: "Customizable dashboard (size and position of cards) designed to display data about a given location.",
+        kind: ProjectKind.WEB,
     },
     billiard: {
         categories: ["dev"],
@@ -111,7 +132,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: billardThumbSmall,
         href: "/development/project/billiard",
         shadowColor: "#01e300",
-        description: "Billiard made from scratch, including the rendering of the objects through glu and the development of a simple 3D engine."
+        description: "Billiard made from scratch, including the rendering of the objects through glu and the development of a simple 3D engine.",
+        kind: ProjectKind.PHYSICS,
     },
     compiler: {
         categories: ["dev"],
@@ -119,7 +141,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tech: [Tech.js, Tech.ts, Tech.mocha],
         year: "2023",
         tags: [Tag.team, Tag.university, Tag.ai_free],
-        description: "A compiler for a subset of C. It supports integers, variables, conditionals, for and while loops, functions, pointers and arrays."
+        description: "A compiler for a subset of C. It supports integers, variables, conditionals, for and while loops, functions, pointers and arrays.",
+        kind: ProjectKind.TOOL,
     },
     projector: {
         categories: ["dev"],
@@ -141,7 +164,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: shader3dThumbSmall,
         href: "https://www.shadertoy.com/view/Wf3XR7",
         shadowColor: "#64ccf5",
-        description: "An infinite 3D GLSL landscape made out of SDFs (Signed Distance Functions). WARNING: link to the project is resource intensive!"
+        description: "An infinite 3D GLSL landscape made out of SDFs (Signed Distance Functions). WARNING: link to the project is resource intensive!",
+        kind: ProjectKind.RENDERING,
     },
     shader2D: {
         categories: ["dev"],
@@ -153,7 +177,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: shader2dThumbSmall,
         href: "https://www.shadertoy.com/view/tXfGDB",
         shadowColor: "#5e00b2",
-        description: "A 2D GLSL landscape made out of SDFs (Signed Distance Functions). WARNING: link to the project may be resource intensive on mobile!"
+        description: "A 2D GLSL landscape made out of SDFs (Signed Distance Functions). WARNING: link to the project may be resource intensive on mobile!",
+        kind: ProjectKind.RENDERING,
     },
     broccolii: {
         categories: ["dev"],
@@ -165,7 +190,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: broccoliiThumbSmall,
         href: "https://github.com/Picorims/app5-broccolii",
         shadowColor: "#37e04d",
-        description: "A 2D live multiplayer game where a bunch of words are displayed on the screen, and players need to write them as fast as possible. Worked on the websocket server, UI design, token based login system, as well as Temporarily deploying online with Docker to test with the class during demo."
+        description: "A 2D live multiplayer game where a bunch of words are displayed on the screen, and players need to write them as fast as possible. Worked on the websocket server, UI design, token based login system, as well as Temporarily deploying online with Docker to test with the class during demo.",
+        kind: ProjectKind.GAME,
     },
     openStreetKart: {
         categories: ["dev"],
@@ -177,7 +203,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: openStreetKartThumbSmall,
         href: "https://picorims.itch.io/open-street-kart",
         shadowColor: "#0ef39f",
-        description: "An open-source arcade karting game where you drive in procedurally recreated real world places."
+        description: "An open-source arcade karting game where you drive in procedurally recreated real world places.",
+        kind: ProjectKind.GAME,
     },
     broccolEVR: {
         categories: ["dev"],
@@ -189,7 +216,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: broccolEVRThumbSmall,
         href: "https://github.com/nano1342/Broccol-E",
         shadowColor: "#2aeecd",
-        description: "A VR game where you need to survive as long as possible by completing missions involving object target and manipulation. The player moves by teleporting to glowing cylinders. I worked on a dynamic 3D vessel map, menus, random mission picking, dynamic music based on time left, and sounds."
+        description: "A VR game where you need to survive as long as possible by completing missions involving object target and manipulation. The player moves by teleporting to glowing cylinders. I worked on a dynamic 3D vessel map, menus, random mission picking, dynamic music based on time left, and sounds.",
+        kind: ProjectKind.VR,
     },
     fr2phonAI: {
         categories: ["dev"],
@@ -199,7 +227,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tags: [Tag.university, Tag.team, Tag.heavy, Tag.ai_remnants_possible_from_others],
         thumbnail: fr2phonAIThumb,
         href: "https://github.com/Picorims/app5-ai-french-phonetics",
-        description: "AI CLI sequence to sequence model that converts French text to phonetic transcription, based on existing tutorials and Open Lexicon data. It uses an encoder-decoder model with LSTM (Long short-term memory) layers. Best reached rate is around 50% accuracy on a test set of 1000 words, with mistakes equivalent to those of a young child."
+        description: "AI CLI sequence to sequence model that converts French text to phonetic transcription, based on existing tutorials and Open Lexicon data. It uses an encoder-decoder model with LSTM (Long short-term memory) layers. Best reached rate is around 50% accuracy on a test set of 1000 words, with mistakes equivalent to those of a young child.",
+        kind: ProjectKind.AI,
     },
     brocampia: {
         categories: ["dev"],
@@ -210,7 +239,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: brocampiaThumb,
         thumbnailSmall: brocampiaThumbSmall,
         shadowColor: "#f4d9a2",
-        description: 'Decision tree based "old school" AI for the game Escampe (also known as Mana). UI and client server interaction were provided.'
+        description: 'Decision tree based "old school" AI for the game Escampe (also known as Mana). UI and client server interaction were provided.',
+        kind: ProjectKind.GAME,
     },
     stationGames: {
         categories: ["dev"],
@@ -222,7 +252,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: stationThumbSmall,
         shadowColor: "#77CBD5",
         href: "https://picorims.github.io/station-games",
-        description: "A game about guessing all subway, train, tramway and bus stations of Ile-De-France. The game's database is obtained from Ile-De-France Mobilités' open data files. See in-game information for more details."
+        description: "A game about guessing all subway, train, tramway and bus stations of Ile-De-France. The game's database is obtained from Ile-De-France Mobilités' open data files. See in-game information for more details.",
+        kind: ProjectKind.WEB,
     },
     localGps: {
         categories: ["dev"],
@@ -233,7 +264,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: gpsThumb,
         thumbnailSmall: gpsThumbSmall,
         // href: "https://picorims.github.io/network-graph-display/",
-        description: "Display a network graph on top of a given background, and allow to perform Dijkstra's algorithm on selected nodes. Built on top of the network graph from bitmap project."
+        description: "Display a network graph on top of a given background, and allow to perform Dijkstra's algorithm on selected nodes. Built on top of the network graph from bitmap project.",
+        kind: ProjectKind.TOOL,
     },
     networkGraphFromBitmap: {
         categories: ["dev"],
@@ -242,7 +274,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2024",
         tags: [Tag.personal, Tag.public, Tag.ai_free],
         href: "https://github.com/Picorims/network-graph-display",
-        description: "Transform a bitmap image into a non directed weighted network graph, and display it using a web viewer to perform Dijkstra's algorithm on selected nodes."
+        description: "Transform a bitmap image into a non directed weighted network graph, and display it using a web viewer to perform Dijkstra's algorithm on selected nodes.",
+        kind: ProjectKind.TOOL,
     },
     bruicolis: {
         categories: ["dev"],
@@ -254,7 +287,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: bruicolisThumbSmall,
         href: "https://github.com/Picorims/app5-bruicolis-front",
         shadowColor: "#0cba80",
-        description: "Developed the front-end of a web application to manage a library of music tracks, and make tag ased playlists. Contributed a bit to the back-end routes (clean architecture, REST API), but didn't work on its architecture."
+        description: "Developed the front-end of a web application to manage a library of music tracks, and make tag ased playlists. Contributed a bit to the back-end routes (clean architecture, REST API), but didn't work on its architecture.",
+        kind: ProjectKind.WEB,
     },
     bloggingKit: {
         categories: ["dev"],
@@ -265,7 +299,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: bloggingKitThumb,
         thumbnailSmall: bloggingKitThumbSmall,
         href: "https://picorims.github.io/svelte-blogging-kit/",
-        description: 'Simple svelte library to help creating blog post pages (only). Not production ready, wrote only for the purpose of powering my blog "Your first music track" (showcased on the music page).'
+        description: 'Simple svelte library to help creating blog post pages (only). Not production ready, wrote only for the purpose of powering my blog "Your first music track" (showcased on the music page).',
+        kind: ProjectKind.WEB,
     },
     directogallery: {
         categories: ["dev"],
@@ -277,7 +312,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: directoThumbSmall,
         href: "https://github.com/Picorims/directogallery",
         shadowColor: "#0a91d4",
-        description: "Application to browse a file system directory as a gallery."
+        description: "Application to browse a file system directory as a gallery.",
+        kind: ProjectKind.SOFTWARE,
     },
     penpotPlugin: {
         categories: ["dev"],
@@ -289,7 +325,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: penpotPluginThumbSmall,
         href: "https://penpot.app/penpothub/plugins/tiling-utility",
         shadowColor: "#31efb8",
-        description: "Penpot plugin contest entry, allowing to create a grid or revolution patterns from a source element, with support for offsets and randomization."
+        description: "Penpot plugin contest entry, allowing to create a grid or revolution patterns from a source element, with support for offsets and randomization.",
+        kind: ProjectKind.PLUGIN,
     },
     imageAnnotationTool: {
         categories: ["dev"],
@@ -297,7 +334,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         tech: [Tech.vbnet],
         year: "2021",
         tags: [Tag.university, Tag.team, Tag.ai_free],
-        description: "This software allows to place points for the different features of a face, to then compare a face with other faces and display the closest one. The focus was on creating a great user interface and experience."
+        description: "This software allows to place points for the different features of a face, to then compare a face with other faces and display the closest one. The focus was on creating a great user interface and experience.",
+        kind: ProjectKind.SOFTWARE,
     },
     plant: {
         categories: ["dev"],
@@ -309,7 +347,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: plantThumbSmall,
         href: "https://github.com/Picorims/plant-game",
         shadowColor: "#26df4e",
-        description: "A two players strategy game about growing plants in a small grid. Grow in a smart way to block your opponent from growing further. Maximize your score by taking advantage of various bonuses."
+        description: "A two players strategy game about growing plants in a small grid. Grow in a smart way to block your opponent from growing further. Maximize your score by taking advantage of various bonuses.",
+        kind: ProjectKind.GAME,
     },
     cursorophone: {
         categories: ["dev"],
@@ -321,7 +360,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: cursoThumbSmall,
         href: "https://picorims.github.io/cursorophone",
         shadowColor: "#625a8f",
-        description: "Play music with your mouse on a keyboard like layout. Keep your mouse click down (or spacebar), and slide it to play. Customize the sound to your needs."
+        description: "Play music with your mouse on a keyboard like layout. Keep your mouse click down (or spacebar), and slide it to play. Customize the sound to your needs.",
+        kind: ProjectKind.WEB,
     },
     spotifyAnalyzer: {
         categories: ["dev"],
@@ -332,7 +372,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: playlistThumb,
         thumbnailSmall: playlistThumbSmall,
         href: "https://github.com/Picorims/spotify-playlist-analyzer",
-        description: "Explore all kind of data about a given spotify playlist. All results are provided through an exported PDF file and additional CSV indexes."
+        description: "Explore all kind of data about a given spotify playlist. All results are provided through an exported PDF file and additional CSV indexes.",
+        kind: ProjectKind.TOOL,
     },
     desktopIconMaker: {
         categories: ["dev"],
@@ -343,7 +384,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: iconMakerThumb,
         thumbnailSmall: iconMakerThumbSmall,
         href: "https://picorims.github.io/desktop-icon-maker/",
-        description: "A small tool to generate a desktop icon (or whatever other purpose) as .ico, .png or .jpeg file. The user can provide a svg document, and customize the appearance (colors, size, padding, radius, etc)."
+        description: "A small tool to generate a desktop icon (or whatever other purpose) as .ico, .png or .jpeg file. The user can provide a svg document, and customize the appearance (colors, size, padding, radius, etc).",
+        kind: ProjectKind.TOOL,
     },
     melodicChrono: {
         categories: ["dev"],
@@ -355,7 +397,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: chronoThumbSmall,
         href: "https://github.com/Picorims/the-melodic-chrono",
         shadowColor: "#bb86fc",
-        description: "Very basic application to play sequence of notes synchronized with a chronometer, allowing to know its progression without having to turn on the phone."
+        description: "Very basic application to play sequence of notes synchronized with a chronometer, allowing to know its progression without having to turn on the phone.",
+        kind: ProjectKind.APP,
     },
 
     // minecraft =======================
@@ -370,7 +413,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: pzThumbSmall,
         href: "https://project-zearth.com/",
         shadowColor: "#e53b44",
-        description: "Member of the Project Zearth team, one of the oldest Minecraft city map still actively maintained. Come have fun with us!"
+        description: "Member of the Project Zearth team, one of the oldest Minecraft city map still actively maintained. Come have fun with us!",
+        kind: ProjectKind.MINECRAFT,
     },
     divercity: {
         categories: ["minecraft"],
@@ -381,7 +425,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: dvThumb,
         href: "https://www.planetminecraft.com/project/divercity-alpha-1-0-city-map-est-2015-2019/",
         shadowColor: "#1ea7b2",
-        description: "An old personal Minecraft city map project. If you want to try it out, pick the unfinished version linked in the description of the map."
+        description: "An old personal Minecraft city map project. If you want to try it out, pick the unfinished version linked in the description of the map.",
+        kind: ProjectKind.MINECRAFT,
     },
 
     // music =======================
@@ -392,7 +437,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         year: "2017",
         tags: [Tag.personal, Tag.public, Tag.ai_free],
         href: "https://www.youtube.com/channel/UCu3xe8VjndEcPF1EYGAaTKg/videos",
-        description: "Some finished tracks are available here."
+        description: "Some finished tracks are available here.",
+        kind: ProjectKind.MUSIC,
     },
 
     yourFirstMusicTrack: {
@@ -405,7 +451,8 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnailSmall: musicBlogThumbSmall,
         shadowColor: "#ffe493",
         href: "https://your-first-music-track.weebly.com/",
-        description: "University English blog introducing music composition and production to people unfamiliar with music theory."
+        description: "University English blog introducing music composition and production to people unfamiliar with music theory.",
+        kind: ProjectKind.BLOG,
     },
 
     cubicAdventure: {
@@ -417,6 +464,7 @@ export const ProjectInfo: {[index: string]: ProjectData} = {
         thumbnail: cubicAdventureThumb,
         href: "https://www.youtube.com/watch?v=ql_KpshKHP0",
         shadowColor: "#64f14f",
-        description: "A 13 minute long music track and video I made to explore concept music for the Minecraft Community Movie. Album art is also by me (made with Inkscape, not AI ;) )."
+        description: "A 13 minute long music track and video I made to explore concept music for the Minecraft Community Movie. Album art is also by me (made with Inkscape, not AI ;) ).",
+        kind: ProjectKind.MUSIC,
     }
 }

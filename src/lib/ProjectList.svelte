@@ -80,6 +80,7 @@
                     return ProjectInfo[key].tech.includes(techKey);
                 }))}
                 <Project
+                    {key}
                     href={ProjectInfo[key].href}
                     shadowColor={ProjectInfo[key].shadowColor}
                     projectInfo={ProjectInfo[key]}

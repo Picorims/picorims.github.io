@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="card_pattern.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#5a5e64"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#303030"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="2.7046296"
+     inkscape:cx="132.18076"
+     inkscape:cy="124.04656"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="8"
+       enabled="true"
+       visible="true" />
+    <inkscape:grid
+       id="grid2"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="64"
+       spacingy="64"
+       empcolor="#00e5b5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="1"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;stroke-linecap:round;stroke-linejoin:round"
+       id="path1"
+       cx="32"
+       cy="32"
+       r="16" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path2"
+       inkscape:flatsided="true"
+       sodipodi:sides="6"
+       sodipodi:cx="160"
+       sodipodi:cy="160"
+       sodipodi:r1="17.888544"
+       sodipodi:r2="16.099689"
+       sodipodi:arg1="-0.46364761"
+       sodipodi:arg2="0.059951151"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 176,152 c 0.8,1.6 -0.0862,16.36359 -1.0718,17.85641 -0.98564,1.49282 -14.21436,8.10718 -16,8 C 157.14256,177.74923 144.8,169.6 144,168 c -0.8,-1.6 0.0862,-16.36359 1.0718,-17.85641 0.98564,-1.49282 14.21436,-8.10718 16,-8 C 162.85744,142.25077 175.2,150.4 176,152 Z"
+       transform="translate(1.0717968,62.143594)" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path3"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="96"
+       sodipodi:cy="96"
+       sodipodi:r1="8"
+       sodipodi:r2="5.6568542"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.78539814"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 96,88 c 1.131371,0 8,6.868629 8,8 0,1.131371 -6.868629,8 -8,8 -1.131371,0 -8,-6.868629 -8,-8 0,-1.131371 6.868629,-8 8,-8 z"
+       transform="translate(-16)" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;stroke-linecap:round;stroke-linejoin:round"
+       id="path4"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="32"
+       sodipodi:cy="160"
+       sodipodi:r1="16"
+       sodipodi:r2="11.313708"
+       sodipodi:arg1="0"
+       sodipodi:arg2="1.0471975"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 48,160 c 0,2.77128 -21.6,15.24205 -24,13.85641 -2.4,-1.38564 -2.4,-26.32718 0,-27.71282 2.4,-1.38564 24,11.08513 24,13.85641 z" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path6"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="160"
+       sodipodi:cy="32"
+       sodipodi:r1="16"
+       sodipodi:r2="11.313708"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.78539816"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 160,16 c 2.26274,0 16,13.737259 16,16 0,2.262742 -13.73726,16 -16,16 -2.26274,0 -16,-13.737259 -16,-16 0,-2.262742 13.73726,-16 16,-16 z"
+       transform="translate(4.1373829e-7,64)" />
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path7"
+       cx="240"
+       cy="224"
+       r="8" />
+    <g
+       id="g11"
+       transform="translate(16)"
+       style="stroke:#ffffff;stroke-width:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 232,88 -16,16"
+         id="path8" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 216,88 16,16"
+         id="path9" />
+    </g>
+    <g
+       id="g12"
+       transform="matrix(1,0,0,-1,16,384)"
+       style="stroke:#ffffff;stroke-width:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 104,216 8,8 -8,8"
+         id="path10" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 84.000083,216 8,8 -8,8"
+         id="path11" />
+    </g>
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path12"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="224"
+       sodipodi:cy="128"
+       sodipodi:r1="8"
+       sodipodi:r2="5.6568542"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.52359875"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 224,120 c 1.38564,0 7.62102,10.8 6.9282,12 -0.69282,1.2 -13.16358,1.2 -13.8564,0 -0.69282,-1.2 5.54256,-12 6.9282,-12 z"
+       transform="translate(-32,32)" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path13"
+       inkscape:flatsided="true"
+       sodipodi:sides="4"
+       sodipodi:cx="96"
+       sodipodi:cy="192"
+       sodipodi:r1="11.313708"
+       sodipodi:r2="5.6568542"
+       sodipodi:arg1="-0.78539816"
+       sodipodi:arg2="3.3974483e-09"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="m 104,184 c 1.13137,1.13137 1.13137,14.86863 0,16 -1.13137,1.13137 -14.868629,1.13137 -16,0 -1.131371,-1.13137 -1.131371,-14.86863 0,-16 1.131371,-1.13137 14.86863,-1.13137 16,0 z"
+       inkscape:transform-center-x="1.3427733"
+       inkscape:transform-center-y="1.3427733"
+       transform="translate(-16,32)" />
+    <g
+       id="g15"
+       style="stroke:#ffffff;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="translate(16,-224)">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 96,248 v 16"
+         id="path14" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 88,256 h 16"
+         id="path15" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 184,32 8,-8 8,8 8,-8 8,8"
+       id="path16" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Charly Schmidt aka Picorims</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Copyright (c) 2026 Charly Schmidt aka Picorims, licensed under CC-BY-NC-ND-4.0</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
