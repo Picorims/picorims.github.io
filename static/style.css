@@ -35,10 +35,11 @@ html {
     --color-background-contrast: rgb(16, 21, 30);
     --color-background-contrast-transparent: rgba(39, 38, 71, 0.8);
     --color-background-contrast-lighter-1: oklch(from var(--color-background-contrast) calc(l + 0.15) c h);
-    --black-shadow: rgb(43, 49, 59);
+    --color-black-shadow: rgb(16, 18, 22);
     --color-background: rgb(9, 35, 36);
     --color-background-transparent: rgb(from var(--color-background) r g b / 0.5);
-    --color-background-lighter-1: oklch(from var(--color-background) calc(l + 0.15) c h);
+    --color-background-lighter-1: oklch(from var(--color-background) calc(l + 0.1) c h);
+    --color-background-lighter-2: oklch(from var(--color-background) calc(l + 0.15) c h);
     --color-text: #ecf3f0;
     --color-text-darker-1: oklch(from var(--color-text) calc(l - 0.1) c h);
     --color-text-darker-2: oklch(from var(--color-text) calc(l - 0.15) c h);

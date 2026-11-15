@@ -32,11 +32,15 @@
 
 <div class="filters">
     {#if category === "dev"}
-        <details>
+        <details open>
             <summary>Filter by tags:</summary>
             <div>
                 {#each Object.values(Tag) as tag}
-                    <label class="togglable-tag">
+                    <label
+                        class="togglable-tag"
+                        class:ai-tag={[Tag.ai_remnants_asserted, Tag.ai_remnants_possible, Tag.ai_remnants_possible_from_others].includes(tag)}
+                        class:ai-free={tag === Tag.ai_free}
+                    >
                         <input type="checkbox" name={tag} value={tag} onchange={() => toggleTag(tag)} />
                         {tag}
                     </label>
@@ -94,10 +98,12 @@
 
 <style>
     details {
-        border: 1px solid var(--main-purple);
-        border-radius: var(--main-border-radius);
+        --outline-color: var(--color-background-lighter-1);
+        --inside-color: var(--color-background-lighter-2);
+        border: 4px solid var(--outline-color);
+        border-radius: var(--subtle-border-radius);
         overflow: hidden;
-        box-shadow: 0 4px 12px var(--main-purple-transparent);
+        box-shadow: 0 2px 4px var(--color-black-shadow);
         width: 100%;
     }
     /*Yes I know but native CSS is still relatively recent
@@ -105,11 +111,12 @@
     details summary {
         font-weight: bold;
         cursor: pointer;
-        background-color: var(--main-purple);
+        background-color: var(--outline-color);
         padding: 0.5em;
     }
     details div {
         padding: 0.5em;
+        background-color: var(--inside-color);
     }
     div.filters {
         margin-bottom: 50px;
@@ -136,25 +143,40 @@
         display: inline-flex;
         align-items: center;
         gap: 0.1em;
-        margin-right: 15px;
-        margin-bottom: 10px;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 0.9rem;
         font-weight: bold;
         cursor: pointer;
     }
 
     label.togglable-tag {
-        color: var(--color-primary);
-        border: 1px solid var(--color-primary);
+        color: var(--color-text-darker-2);
+        border: 2px solid var(--color-background-lighter-1);
         border-radius: var(--subtle-border-radius);
-        padding: 0.1em 0.2em;
-        background-color: var(--color-background-transparent);
+        padding: 0.25em;
+        padding-right: 0.5em;
+        background-color: var(--color-background);
     }
     label.togglable-tag:hover {
-        background-color: var(--color-primary-transparent);
+        background-color: var(--color-secondary-transparent);
+        color: var(--color-text);
     }
     label.togglable-tag:has(input:checked) {
-        background-color: var(--color-primary);
+        background-color: var(--color-secondary);
         color: var(--color-background);
+    }
+    label.togglable-tag.ai-tag {
+        color: var(--color-tertiary);
+    }
+    label.togglable-tag.ai-tag:has(input:checked) {
+        background-color: var(--color-tertiary);
+    }
+    label.togglable-tag.ai-free {
+        color: var(--color-primary);
+    }
+    label.togglable-tag.ai-free:has(input:checked) {
+        background-color: var(--color-primary);
     }
 
     label.togglable-tech {
@@ -162,7 +184,7 @@
         margin: 0;
         color: oklch(from var(--tech-color, var(--main-white)) calc(l + 0.5) c h);
         /* border: 1px solid oklch(from var(--tech-color, var(--main-white)) calc(l - 0.15) c h); */
-        border: 1px solid oklch(from var(--color-background) calc(l + 0.2) c h);
+        border: 2px solid var(--color-background-lighter-1);
         border-radius: var(--subtle-border-radius);
         padding: 0.2em 0.4em;
         background-color: var(--color-background);
