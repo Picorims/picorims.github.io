@@ -58,7 +58,7 @@ body {
     background-color: var(--color-background);
     padding: 0;
     margin: 0;
-    color: white;
+    color: var(--color-text);
     width: 100%;
     overflow-x: hidden;
 
@@ -74,23 +74,27 @@ section {
 }
 
 a:not(.button):not(.discreet) {
-    color: white;
+    --background-default: oklch(from var(--color-secondary) calc(l - 0.2) c h);
+    color: var(--color-text);
     background-size: 100% 200%;
 
-    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, var(--color-secondary) 50%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, var(--background-default) 50%);
     transition: .2s ease-in-out;
     text-decoration: underline;
-    text-decoration-color: var(--color-secondary);
+    text-decoration-color: var(--background-default);
     text-decoration-thickness: 3px;
 }
 a:not(.button):not(.discreet):hover {
+    text-decoration-thickness: 0;
     background-position: 0 100%;
+    text-shadow: 0 0 4px oklch(from var(--background-default) calc(l - 0.75) c h);
+    color: white; /* need contrast */
 }
 
 a.button {
     --background-default: oklch(from var(--color-secondary) calc(l - 0.2) c h);
     --background-hover: oklch(from var(--color-tertiary) calc(l - 0.2) c h);
-    color: var(--color-text);
+    color: white; /* need contrast */
     text-decoration: none;
     padding: 0.5rem;
     display: inline-block;
