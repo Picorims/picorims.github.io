@@ -119,10 +119,9 @@
         gap: 20px;
     }
     div.projects-container {
-        display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 1.5rem;
     }
 
     div.tag-list {
@@ -143,18 +142,18 @@
     }
 
     label.togglable-tag {
-        color: var(--main-blue);
-        border: 1px solid var(--main-blue);
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
         border-radius: var(--subtle-border-radius);
         padding: 0.1em 0.2em;
-        background-color: var(--main-black-transparent);
+        background-color: var(--color-background-transparent);
     }
     label.togglable-tag:hover {
-        background-color: var(--main-blue-transparent);
+        background-color: var(--color-primary-transparent);
     }
     label.togglable-tag:has(input:checked) {
-        background-color: var(--main-blue);
-        color: var(--main-black);
+        background-color: var(--color-primary);
+        color: var(--color-background);
     }
 
     label.togglable-tech {
@@ -162,17 +161,17 @@
         margin: 0;
         color: oklch(from var(--tech-color, var(--main-white)) calc(l + 0.5) c h);
         /* border: 1px solid oklch(from var(--tech-color, var(--main-white)) calc(l - 0.15) c h); */
-        border: 1px solid oklch(from var(--main-black) calc(l + 0.2) c h);
+        border: 1px solid oklch(from var(--color-background) calc(l + 0.2) c h);
         border-radius: var(--subtle-border-radius);
         padding: 0.2em 0.4em;
-        background-color: var(--main-black);
+        background-color: var(--color-background);
     }
     label.togglable-tech:has(input:checked) {
-        background-color: var(--main-blue);
-        color: var(--main-black);
+        background-color: var(--color-primary);
+        color: var(--color-background);
     }
     label.togglable-tech:hover {
-        background-color: var(--main-blue-transparent);
+        background-color: var(--color-primary-transparent);
     }
     label.togglable-tech span.input-and-text {
         display: inline-flex;
@@ -194,9 +193,15 @@
     }
 
     label.togglable-tech:has(input:checked) span.icon {
-        background-color: var(--main-black);
-        outline: 2px solid var(--main-black);
+        background-color: var(--color-background);
+        outline: 2px solid var(--color-background);
         border-radius: var(--subtle-border-radius);
+    }
+
+    @media screen and (width < 420px) {
+        div.projects-container {
+            grid-template-columns: 1fr;
+        }
     }
 
 </style>

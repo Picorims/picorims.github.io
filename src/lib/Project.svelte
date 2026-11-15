@@ -24,7 +24,7 @@
     }: Props = $props();
 </script>
 
-<div class="project-container" style="box-shadow: 0 0px 24px {shadowColor}; --color: {shadowColor}">
+<div class="project-container" style="--color: {shadowColor}">
     {#if (projectInfo && projectInfo.thumbnail) || background !== ""}
         <img class="bgnd-img" srcset={`${projectInfo?.thumbnailSmall ?? projectInfo?.thumbnail ?? background}, ${projectInfo?.thumbnail ?? background} 2x`} alt="{projectInfo?.name || title} thumbnail">
     {:else}
@@ -34,20 +34,18 @@
     {/if}
     
     <div class="card-container">
-        {#if href !== "/"}
-            <h3><a href={href}>{projectInfo?.name || title}</a></h3>
-        {:else}
+        <div class="card-header">
             <h3>{projectInfo?.name || title}</h3>
-        {/if}
-
-        <p>
             <span class="year">{projectInfo?.year || ""}</span>
+        </div>
+
+        <p class="tag-list">
             <TagList tagList={projectInfo?.tags || []}></TagList>
         </p>
 
         <TechList list={projectInfo?.tech || techList}></TechList>
         
-        <p>
+        <p class="text">
             {@render children?.()}
         </p>
         
@@ -62,14 +60,12 @@
         position: relative;
         display: block;
         flex: 1 0 auto;
-        width: 300px;
-        max-width: 360px;
         min-height: 300px;
-        border-radius: var(--main-border-radius);
+        border-radius: var(--large-border-radius);
         overflow: hidden;
-        background-color: var(--black-contrast-transparent);
-        background-image: radial-gradient(ellipse at center, transparent 0%, oklch(from var(--color) l c h / 0.1) 100%);
-        border: 1px solid var(--color);
+        background-color: var(--color-background-contrast);
+        /* border: 1px solid var(--color); */
+        border: 12px solid oklch(from var(--color-background-contrast) calc(l - 0.025) c h)
     }
     @media screen and (max-width: 460px) {
         div.project-container {
@@ -78,17 +74,34 @@
     }
 
     div.card-container {
-        padding: 20px;
+        padding: 0.5rem;
+        padding-top: 0.25rem;
     }
+
+    div.card-header {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+        border-bottom: 1px solid var(--color-background-contrast-lighter-1);
+    }
+
     div.card-container h3 {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
         margin: 0;
         margin-bottom: 0.25em;
+        color: var(--color-text-darker-1);
     }
-    div.card-container p {
-        margin: 0.5em 0;
-        font-size: 1.1rem;
+
+    span.year {
+        font-size: 1.05rem;
+        color: var(--color-text-darker-1);
     }
+
+    p.tag-list {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
     div.project-container .bgnd-img {
         width: 100%;
         height: 200px;
@@ -103,8 +116,14 @@
         color: var(--black-contrast);
     }
 
-    span.year {
-        font-weight: bold;
-        margin-right: 0.5em;
+    p.text {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        line-height: 1.1lh;
+        color: var(--color-text-darker-2);
+    }
+
+    a {
+        margin-top: 0.25rem;
     }
 </style>

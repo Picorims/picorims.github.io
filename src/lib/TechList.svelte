@@ -380,8 +380,8 @@
     }
     span.icon {
         display: inline-block;
-        width: 1.25em;
-        height: 1.25em;
+        width: 1.5rem;
+        height: 1.5rem;
         margin: 0 0.25em;
     }
 </style>

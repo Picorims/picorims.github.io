@@ -10,6 +10,8 @@
         ai_remnants_possible_from_others = "Possible AI remnants from others",
         ai_free = "No AI used",
     }
+
+    const aiTags = [Tag.ai_remnants_asserted, Tag.ai_remnants_possible, Tag.ai_remnants_possible_from_others];
 </script>
 
 <script lang="ts">
@@ -22,20 +24,27 @@
 
 <span>
     {#each tagList as tag}
-        <span class="tag">{tag}</span>
+        <span class="tag" class:ai-tag={aiTags.includes(tag) } class:ai-free={tag === Tag.ai_free}>{tag}</span>
     {/each}
 </span>
 
 <style>
     span.tag {
         display: inline-block;
-        padding: 0.1em 0.2em;
-        margin-right: 0.25em;
-        margin-bottom: 0.25em;
-        color: var(--color-primary);
-        font-weight: bold;
-        background-color: var(--color-background-transparent);
-        border: 1px solid var(--color-primary);
+        padding: 0.15em 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        color: var(--color-text-darker-2);
+        font-size: 0.9rem;
+        font-weight: 300;
+        background-color: var(--color-background);
+        border: 2px solid var(--color-background-lighter-1);
         border-radius: var(--subtle-border-radius);
+    }
+    span.ai-tag {
+        color: var(--color-tertiary);
+    }
+    span.ai-free {
+        color: var(--color-primary);
     }
 </style>

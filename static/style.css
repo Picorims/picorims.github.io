@@ -32,19 +32,24 @@ html {
     --color-tertiary-transparent-light: rgb(from var(--color-tertiary) r g b / 0.1);
     --color-tertiary-transparent-very-light: rgb(from var(--color-tertiary) r g b / 0.05);
     --blue-shadow: rgb(32, 103, 190);
-    --black-contrast: rgb(39, 38, 71);
-    --black-contrast-transparent: rgba(39, 38, 71, 0.8);
+    --color-background-contrast: rgb(16, 21, 30);
+    --color-background-contrast-transparent: rgba(39, 38, 71, 0.8);
+    --color-background-contrast-lighter-1: oklch(from var(--color-background-contrast) calc(l + 0.15) c h);
     --black-shadow: rgb(43, 49, 59);
-    --color-background: rgb(19, 21, 26);
+    --color-background: rgb(9, 35, 36);
     --color-background-transparent: rgb(from var(--color-background) r g b / 0.5);
-    --color-text: #ffffff;
+    --color-background-lighter-1: oklch(from var(--color-background) calc(l + 0.15) c h);
+    --color-text: #ecf3f0;
+    --color-text-darker-1: oklch(from var(--color-text) calc(l - 0.1) c h);
+    --color-text-darker-2: oklch(from var(--color-text) calc(l - 0.15) c h);
     /* --color-donate: rgb(240, 188, 16); */
     --color-donate: var(--color-tertiary);
 
     --linear-gradient: linear-gradient(132deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
     --header-height: 60px;
-    --main-border-radius: 10px;
-    --subtle-border-radius: 3px;
+    --large-border-radius: 24px;
+    --main-border-radius: 12px;
+    --subtle-border-radius: 4px;
 }
 
 body {
@@ -63,7 +68,7 @@ body {
 }
 
 section {
-    padding: 0 10%;
+    padding: 0 2rem;
 }
 
 a:not(.button):not(.discreet) {
@@ -81,6 +86,8 @@ a:not(.button):not(.discreet):hover {
 }
 
 a.button {
+    --background-default: oklch(from var(--color-secondary) calc(l - 0.2) c h);
+    --background-hover: oklch(from var(--color-tertiary) calc(l - 0.2) c h);
     color: var(--color-text);
     text-decoration: none;
     padding: 0.5rem;
@@ -88,14 +95,17 @@ a.button {
     border-radius: 5px;
     font-weight: bold;
     
-    background-color: var(--color-secondary);
+    background-color: oklch(from var(--background-default) calc(l - 0.5) c h);
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, var(--color-secondary) 50%, var(--color-tertiary) 50%);
+    background-image: linear-gradient(to bottom, var(--background-default) 50%, var(--background-hover) 50%);
+    text-shadow: 0 0 4px oklch(from var(--background-default) calc(l - 0.75) c h);
+
     transition: .2s ease-in-out;
 }
 a.button:hover {
     background-position: 0 100%;
-    box-shadow: 0 0 16px var(--color-tertiary);
+    box-shadow: 0 0 8px oklch(from var(--background-hover) calc(l + 0.2) c h);
+    text-shadow: 0 0 4px oklch(from var(--background-hover) calc(l - 0.75) c h);
 }
 
 h1 {
@@ -111,4 +121,10 @@ h2 {
 
 h3 {
     font-size: 1.7rem;
+}
+
+@media screen and (width < 420px) {
+    section {
+        padding: 0 1.5rem;
+    }
 }
