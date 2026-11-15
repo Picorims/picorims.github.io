@@ -53,16 +53,8 @@
 		justify-content: space-between;
 		width: 100%;
 		min-height: var(--header-height);
-		/* background-color: var(--black-contrast-transparent); */
-		background-image:
-			linear-gradient(to bottom, rgba(0,0,0,0.35), transparent 60%),
-			linear-gradient(90deg, var(--color-primary-transparent), var(--color-secondary-transparent), var(--color-tertiary-transparent));
-		backdrop-filter: blur(10px);
-
-		border-bottom: 3px solid;
-		border-image-slice: 1;
-		border-color: var(--color-primary);
-		border-image-source: var(--linear-gradient);
+		background-color: var(--color-background);
+		box-shadow: 0 0 48px 48px var(--color-background);
 	}
 
 	div.header-l {
@@ -120,36 +112,49 @@
 		color: white;
 		font-size: 1.2rem;
 		text-shadow: 0 0 10px black;
+		font-variant-caps: small-caps;
+		font-weight: 300;
+		letter-spacing: 0.075em;
 	}
 	nav.nav-pc a {
 		height: 100%;
-		padding: 0 0.5em;
+		padding: 0 0.75em;
 	}
 	nav a::after {
 		position: absolute;
 		display: block;
-		bottom: 0;
+		bottom: -50%;
 		left: 50%;
 		width: 0;
 		content: '';
-		height: 2px;
+		height: 10px;
 		background-color: var(--color-primary);
 		box-shadow: 0 0 4px var(--color-primary);
 		transition: 0.1s;
+		/* https://css-generators.com/wavy-shapes/ */
+		mask: 
+			radial-gradient(8.32px at 50% calc(100% + 4.2px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 12px) calc(50% - 4px + .5px)/24px 8px repeat-x,
+			radial-gradient(8.32px at 50% -4.2px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 4px)/24px 8px repeat-x;
+		border-radius: 8px;
 	}
 	nav.nav-mobile a::after {
-		background-color: var(--color-secondary);
+		background-color: var(--color-primary);
+		left: initial;
+		right: 0;
 		height: 100%;
 		z-index: -1;
 		transition: 0.2s;
 	}
-	nav a:hover::after {
+	nav:not(.nav-mobile) a:hover::after {
 		width: 70%;
 		left: 15%;
 	}
 	nav.nav-mobile a:hover::after {
-		width: 100%;
-		left: 0;
+		width: 95%;
+		right: 0;
+	}
+	nav a:hover {
+		color: white; /*intentional*/
 	}
 	nav.nav-mobile a {
 		padding: 0.5em 1em;
@@ -160,10 +165,13 @@
 		right: 0;
 		top: var(--header-height);
 		max-height: calc(100vh - var(--header-height));
+		padding: 0.5rem;
 		overflow-y: auto;
 		display: flex;
 		flex-direction: column;
-		background-color: var(--black-contrast);
+		background-color: var(--color-background);
+		box-shadow: 0 0 32px 32px var(--color-background);
+		border-bottom-left-radius: var(--large-border-radius);
 	}
 
 	nav.nav-mobile button {
@@ -186,17 +194,18 @@
 		margin-right: 20px;
 		padding: 0.5em 1em;
 		border: 2px solid var(--color-donate);
-		border-radius: 4px;
+		border-radius: var(--subtle-border-radius);
 		color: var(--color-donate);
 		font-weight: 900;
 		text-decoration: none;
-		box-shadow: 0 0 4px var(--color-donate);
+		box-shadow: 0 0 2px var(--color-donate);
+		background-color: rgb(from var(--color-donate) r g b / 0.2);
 		
 		transition: 0.1s;
 	}
 	a.donate:hover {
 		background-color: var(--color-donate);
-		color: black;
+		color: black; /* intentional */
 		box-shadow: 0 0 16px var(--color-donate);
 	}
 

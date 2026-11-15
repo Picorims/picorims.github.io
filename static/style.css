@@ -49,7 +49,7 @@ html {
     --color-donate: var(--color-tertiary);
 
     --linear-gradient: linear-gradient(132deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
-    --header-height: 60px;
+    --header-height: 96px;
     --large-border-radius: 24px;
     --main-border-radius: 12px;
     --subtle-border-radius: 4px;
