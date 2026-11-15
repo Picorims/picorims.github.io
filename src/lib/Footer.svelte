@@ -71,7 +71,7 @@
     div.background {
         position: absolute;
         content: "";
-        top: 0;
+        top: 5%;
         left: -10%;
         width: 120%;
         height: 120%;
@@ -157,7 +157,7 @@
     }
 
     h2 {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         text-align: left;
     }
 
