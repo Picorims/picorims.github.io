@@ -182,10 +182,10 @@
 
 
     #categories {
-        background-image:
+        /* background-image:
             radial-gradient(ellipse at top left, var(--color-primary-transparent-light), transparent),
             radial-gradient(ellipse at top right, var(--color-secondary-transparent-light), transparent),
-            radial-gradient(ellipse at bottom, var(--color-tertiary-transparent-light), transparent);
+            radial-gradient(ellipse at bottom, var(--color-tertiary-transparent-light), transparent); */
         padding-top: 32px;
         padding-bottom: 64px;
         margin-bottom: -50px; /* To compensate for the footer margin */
