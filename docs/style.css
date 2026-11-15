@@ -2,42 +2,64 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: "Geom";
+  src: url("fonts/Geom/Geom-VariableFont_wght.ttf");
+  font-weight: 300 900;
+
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geom";
+  src: url("fonts/Geom/Geom-Italic-VariableFont_wght.ttf");
+  font-weight: 300 900;
+
+  font-style: italic;
+}
 
 html {
-    font-family: 'Roboto Slab', sans-serif;
-    --main-blue: rgba(0,188,245,1);
-    --main-blue-transparent: rgba(0,188,245,0.25);
-    --main-blue-transparent-light: rgba(0,188,245,0.1);
-    --main-blue-transparent-very-light: rgba(0,188,245,0.05);
-    --main-purple: rgba(131,23,222,1);
-    --main-purple-transparent: rgba(131,23,222,0.25);
-    --main-purple-transparent-light: rgba(131,23,222,0.1);
-    --main-purple-transparent-very-light: rgba(131,23,222,0.05);
-    --main-pink: rgba(240,16,120,1);
-    --main-pink-transparent: rgba(240,16,120,0.25);
-    --main-pink-transparent-light: rgba(240,16,120,0.1);
-    --main-pink-transparent-very-light: rgba(240,16,120,0.05);
+    font-family: 'Geom', sans-serif;
+    --color-primary: #69fa7a; /* must be hex for categories pattern filter to work. */
+    --color-primary-transparent: rgb(from var(--color-primary) r g b / 0.25);
+    --color-primary-transparent-light: rgb(from var(--color-primary) r g b / 0.1);
+    --color-primary-transparent-very-light: rgb(from var(--color-primary) r g b / 0.05);
+    --color-secondary: #00bcf5; /* must be hex for categories pattern filter to work. */
+    --color-secondary-transparent: rgb(from var(--color-secondary) r g b / 0.25);
+    --color-secondary-transparent-light: rgb(from var(--color-secondary) r g b / 0.1);
+    --color-secondary-transparent-very-light: rgb(from var(--color-secondary) r g b / 0.05);
+    --color-tertiary: #ffcd07; /* must be hex for categories pattern filter to work. */
+    --color-tertiary-transparent: rgb(from var(--color-tertiary) r g b / 0.25);
+    --color-tertiary-transparent-light: rgb(from var(--color-tertiary) r g b / 0.1);
+    --color-tertiary-transparent-very-light: rgb(from var(--color-tertiary) r g b / 0.05);
     --blue-shadow: rgb(32, 103, 190);
-    --black-contrast: rgb(39, 38, 71);
-    --black-contrast-transparent: rgba(39, 38, 71, 0.8);
-    --black-shadow: rgb(43, 49, 59);
-    --main-black: rgb(19, 21, 26);
-    --main-black-transparent: rgba(19, 21, 26, 0.5);
-    --main-white: #ffffff;
-    --color-donate: rgb(240, 188, 16);
+    --color-background-contrast: rgb(16, 21, 30);
+    --color-background-contrast-transparent: rgba(39, 38, 71, 0.8);
+    --color-background-contrast-transparent-very-light: rgba(39, 38, 71, 0.25);
+    --color-background-contrast-lighter-1: oklch(from var(--color-background-contrast) calc(l + 0.15) c h);
+    --color-background-contrast-darker-1: oklch(from var(--color-background-contrast) calc(l - 0.025) c h);
+    --color-black-shadow: rgb(16, 18, 22);
+    --color-background: rgb(9, 35, 36);
+    --color-background-transparent: rgb(from var(--color-background) r g b / 0.5);
+    --color-background-lighter-1: oklch(from var(--color-background) calc(l + 0.1) c h);
+    --color-background-lighter-2: oklch(from var(--color-background) calc(l + 0.15) c h);
+    --color-text: #ecf3f0;
+    --color-text-darker-1: oklch(from var(--color-text) calc(l - 0.1) c h);
+    --color-text-darker-2: oklch(from var(--color-text) calc(l - 0.15) c h);
+    /* --color-donate: rgb(240, 188, 16); */
+    --color-donate: var(--color-tertiary);
 
-    --linear-gradient: linear-gradient(132deg, rgba(0,188,245,1) 0%, rgba(131,23,222,1) 50%, rgba(240,16,120,1) 100%);
-    --header-height: 60px;
-    --main-border-radius: 10px;
-    --subtle-border-radius: 3px;
+    --linear-gradient: linear-gradient(132deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
+    --header-height: 96px;
+    --large-border-radius: 24px;
+    --main-border-radius: 12px;
+    --subtle-border-radius: 4px;
 }
 
 body {
-    background-color: var(--main-black);
+    background-color: var(--color-background);
     padding: 0;
     margin: 0;
-    color: white;
+    color: var(--color-text);
     width: 100%;
     overflow-x: hidden;
 
@@ -49,45 +71,54 @@ body {
 }
 
 section {
-    padding: 0 10%;
+    padding: 0 2rem;
 }
 
 a:not(.button):not(.discreet) {
-    color: white;
+    --background-default: oklch(from var(--color-secondary) calc(l - 0.2) c h);
+    color: var(--color-text);
     background-size: 100% 200%;
 
-    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, var(--main-purple) 50%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, var(--background-default) 50%);
     transition: .2s ease-in-out;
     text-decoration: underline;
-    text-decoration-color: var(--main-purple);
+    text-decoration-color: var(--background-default);
     text-decoration-thickness: 3px;
 }
 a:not(.button):not(.discreet):hover {
+    text-decoration-thickness: 0;
     background-position: 0 100%;
+    text-shadow: 0 0 4px oklch(from var(--background-default) calc(l - 0.75) c h);
+    color: white; /* need contrast */
 }
 
 a.button {
-    color: white;
+    --background-default: oklch(from var(--color-secondary) calc(l - 0.2) c h);
+    --background-hover: oklch(from var(--color-tertiary) calc(l - 0.2) c h);
+    color: white; /* need contrast */
     text-decoration: none;
     padding: 0.5rem;
     display: inline-block;
     border-radius: 5px;
     font-weight: bold;
     
-    background-color: var(--main-purple);
+    background-color: oklch(from var(--background-default) calc(l - 0.5) c h);
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, var(--main-purple) 50%, var(--main-pink) 50%);
+    background-image: linear-gradient(to bottom, var(--background-default) 50%, var(--background-hover) 50%);
+    text-shadow: 0 0 4px oklch(from var(--background-default) calc(l - 0.75) c h);
+
     transition: .2s ease-in-out;
 }
 a.button:hover {
     background-position: 0 100%;
-    box-shadow: 0 0 16px var(--main-pink);
+    box-shadow: 0 0 8px oklch(from var(--background-hover) calc(l + 0.2) c h);
+    text-shadow: 0 0 4px oklch(from var(--background-hover) calc(l - 0.75) c h);
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
-    text-shadow: 0 1px 3px white;
+    text-shadow: 0 1px 3px var(--color-text);
 }
 
 h2 {
@@ -97,4 +128,10 @@ h2 {
 
 h3 {
     font-size: 1.7rem;
+}
+
+@media screen and (width < 420px) {
+    section {
+        padding: 0 1.5rem;
+    }
 }
