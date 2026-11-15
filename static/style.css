@@ -6,15 +6,15 @@
 
 html {
     font-family: 'Roboto Slab', sans-serif;
-    --color-primary: rgba(0,188,245,1);
+    --color-primary: rgb(0, 255, 28);
     --color-primary-transparent: rgb(from var(--color-primary) r g b / 0.25);
     --color-primary-transparent-light: rgb(from var(--color-primary) r g b / 0.1);
     --color-primary-transparent-very-light: rgb(from var(--color-primary) r g b / 0.05);
-    --color-secondary: rgba(131,23,222,1);
+    --color-secondary: rgba(0,188,245,1);
     --color-secondary-transparent: rgb(from var(--color-secondary) r g b / 0.25);
     --color-secondary-transparent-light: rgb(from var(--color-secondary) r g b / 0.1);
     --color-secondary-transparent-very-light: rgb(from var(--color-secondary) r g b / 0.05);
-    --color-tertiary: rgba(240,16,120,1);
+    --color-tertiary: rgb(255, 205, 7);
     --color-tertiary-transparent: rgb(from var(--color-tertiary) r g b / 0.25);
     --color-tertiary-transparent-light: rgb(from var(--color-tertiary) r g b / 0.1);
     --color-tertiary-transparent-very-light: rgb(from var(--color-tertiary) r g b / 0.05);
@@ -25,7 +25,8 @@ html {
     --color-background: rgb(19, 21, 26);
     --color-background-transparent: rgb(from var(--color-background) r g b / 0.5);
     --color-text: #ffffff;
-    --color-donate: rgb(240, 188, 16);
+    /* --color-donate: rgb(240, 188, 16); */
+    --color-donate: var(--color-tertiary);
 
     --linear-gradient: linear-gradient(132deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-tertiary) 100%);
     --header-height: 60px;
