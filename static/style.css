@@ -2,10 +2,23 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: "Geom";
+  src: url("fonts/Geom/Geom-VariableFont_wght.ttf");
+  font-weight: 300 900;
+
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geom";
+  src: url("fonts/Geom/Geom-Italic-VariableFont_wght.ttf");
+  font-weight: 300 900;
+
+  font-style: italic;
+}
 
 html {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Geom', sans-serif;
     --color-primary: rgb(105, 250, 122);
     --color-primary-transparent: rgb(from var(--color-primary) r g b / 0.25);
     --color-primary-transparent-light: rgb(from var(--color-primary) r g b / 0.1);
