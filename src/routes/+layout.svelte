@@ -16,7 +16,7 @@
 
 <style>
     div#page-content {
-        padding-top: var(--header-height);
+        padding-top: calc(6rem + var(--header-height));
         /*make footer stick to bottom of the page if needed*/
         flex: 1;
     }
