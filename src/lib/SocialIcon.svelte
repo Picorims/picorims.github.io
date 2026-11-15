@@ -25,7 +25,7 @@
         position: relative;
         padding: 0.25em;
         border-radius: 50px;
-        background-color: var(--color-background);
+        background-color: rgb(from var(--color-background) r g b / 0.75);
         transition: 0.1s;
     }
 
@@ -39,8 +39,7 @@
         width: var(--shadow-size);
         height: var(--shadow-size);
         border-radius: var(--shadow-size);
-        background: var(--color-primary);
-        background: var(--linear-gradient);
+        background: var(--color-secondary);
         filter: blur(2px);
         transition: 0.1s;
     }
