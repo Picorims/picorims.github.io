@@ -15,6 +15,7 @@
 		<a class="discreet" href="/development">Development</a>
 		<a class="discreet" href="/music">Music</a>
 		<a class="discreet" href="/minecraft">Minecraft</a>
+		<a class="discreet" href="/ai_stance">AI Stance</a>
 	</nav>
 	<nav class="nav-mobile">
 		<button
@@ -40,6 +41,7 @@
 			<a class="discreet" href="/development">Development</a>
 			<a class="discreet" href="/music">Music</a>
 			<a class="discreet" href="/minecraft">Minecraft</a>
+			<a class="discreet" href="/ai_stance">AI Stance</a>
 		</div>
 	</nav>
 </header>

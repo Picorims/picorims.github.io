@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Project from '$lib/Project.svelte';
-	import { ProjectInfo } from '$lib/project_info';
 	import ProjectList from '$lib/ProjectList.svelte';
 </script>
 
@@ -8,6 +6,11 @@
 
 <section id="projects-section">
 	<h2>Past AI usage disclosures explained</h2>
+	<p class="note">
+		<strong>Note:</strong> if you are looking for my stance/opinion on the subject,
+		head over to <a href="/ai_stance">the AI stance page.</a> Besides the "Why" section which
+		briefly tips over the subject, this is mostly a technical explanation.
+	</p>
 	<ul>
 		<li>
 			<strong class="emphasis">AI:</strong> used here as a shortcut to define
@@ -59,6 +62,15 @@
 </section>
 
 <style>
+	p.note {
+		color: var(--color-primary);
+		border: 4px dashed var(--color-primary-transparent);
+		padding: 1rem;
+		border-radius: var(--main-border-radius);
+	}
+	p.note > strong {
+		text-decoration: underline;
+	}
 	ul > li {
 		margin-bottom: 0.5em;
 		font-weight: 300;
