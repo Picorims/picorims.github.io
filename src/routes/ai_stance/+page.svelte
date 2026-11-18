@@ -1,5 +1,25 @@
 <script lang="ts">
+	const questions = {
+		"Pro or anti AI?": "pro-or-anti-ai",
+		"Why did you choose to use AI?": "why-used-ai",
+		"Did you stop using AI?": "did-you-stop-using-ai",
+		"Why did you stop using AI?": "why-stopped",
+		"Pros and cons of AI for you?": "pros-and-cons",
+		"Opinion on full AI bans?": "opinion-full-ai-ban",
+		"Opinion on AI disclosures?": "opinion-ai-disclosure",
+		'Will you stop working on "AI tainted" projects?': "will-you-stop-tainted-projects",
+	} as const;
+	type QType = keyof typeof questions;
 </script>
+
+{#snippet question(q: QType)}
+	<h3 class="q" id={questions[q]}>
+		{q}
+		<a class="title-link" href={`#${questions[q]}`}>
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link preview-icon"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+		</a>
+	</h3>
+{/snippet}
 
 <h1>AI Stance</h1>
 <div role="doc-subtitle" class="subtitle">Last updated: 16 November 2026</div>
@@ -100,13 +120,13 @@
 		see.
 	</p>
 
-	<h3 class="q">Pro or anti AI?</h3>
+	{@render question("Pro or anti AI?")}
 	<p>
 		I don't like having to choose between black and white. But if I <i>had</i> to pick one, it would be
 		anti AI. Nuances are covered in subsequent questions.
 	</p>
 
-	<h3 class="q">Why did you choose to use AI?</h3>
+	{@render question("Why did you choose to use AI?")}
 	<ul>
 		<li>
 			Strong pressure from the tech industry to "stay on the page", "stay in the loop", "not miss
@@ -120,7 +140,7 @@
 		</li>
 	</ul>
 
-	<h3 class="q">Did you stop using AI?</h3>
+	{@render question("Did you stop using AI?")}
 	<p>
 		The only usage I kept is as a mean to find new paths of information, when I have exhausted
 		looking online and asking around.
@@ -129,14 +149,14 @@
 		<strong>For gamedev projects, I fully stopped.</strong>
 	</p>
 
-	<h3 class="q">Why did you stop using AI?</h3>
+	{@render question("Why did you stop using AI?")}
 	<p>
 		For ethical reasons, loss of meaning, coping with RSI issues, and reducing noise. I always used
 		free tiers besides 3 months of the basic GitHub copilot tier at the end, so the cost wasn't a
 		subject for me.
 	</p>
 
-	<h3 class="q">Pros and cons of AI for you?</h3>
+	{@render question("Pros and cons of AI for you?")}
 	<p>The cons far outweight the pros. And there are more cons than pros. That being said:</p>
 	<h4>Pros:</h4>
 	<ul>
@@ -341,7 +361,7 @@
 		</li>
 	</ul>
 
-	<h3 class="q">Opinion on full AI bans?</h3>
+	{@render question("Opinion on full AI bans?")}
 	<p>
 		I think it is a harmful approach, somewhat dogmatic, that also excludes any form of nuance.
 		Having all the full anti AI on one side and all the turbo AI bros on the others means anybody
@@ -369,7 +389,7 @@
 		worded in policies/codes of conduct) when taking such drastic decisions.
 	</p>
 
-	<h3 class="q">Opinion on AI disclosures?</h3>
+	{@render question("Opinion on AI disclosures?")}
 	<p>
 		I think it is a good thing. It is about transparency for consumers, the same way we have it, to
 		some extent (and depending of countries/regions) for food, for instance. <strong
@@ -417,7 +437,7 @@
 		and App Store, console stores, etc.
 	</p>
 
-	<h3 class="q">Will you stop working on "AI tainted" projects?</h3>
+	{@render question('Will you stop working on "AI tainted" projects?')}
 	<p>No, and for multiple reasons:</p>
 	<ul>
 		<li>
@@ -490,6 +510,14 @@
 	h3.q::before {
 		content: counter(heading) ') ';
 		counter-increment: heading;
+	}
+
+	
+	a.title-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.25rem;
 	}
 
 	/** yes CSS nesting is a thing but relatively recent*/
