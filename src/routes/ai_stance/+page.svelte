@@ -1,4 +1,6 @@
 <script lang="ts">
+	import thumbnail from "$lib/assets/2026-11_the_sad_thing_V_SMALL.jpg";
+
 	const questions = {
 		"Pro or anti AI?": "pro-or-anti-ai",
 		"Why did you choose to use AI?": "why-used-ai",
@@ -21,6 +23,8 @@
 	</h3>
 {/snippet}
 
+<img class="thumbnail" src={thumbnail} alt="illustration with a person across a rock, listening to music and showing signs of sadness, in the middle of a desertic area at night, with a forest and a hidden festive campfire in the background." />
+
 <h1>AI Stance</h1>
 <div role="doc-subtitle" class="subtitle">Last updated: 16 November 2026</div>
 
@@ -29,6 +33,7 @@
 	<details>
 		<summary>Click to reveal.</summary>
 		<ul>
+			<li><strong>2026/11/25:</strong> Added thumbnail, still nead to do a reread and clarify things. At some point in the future.</li>
 			<li><strong>2026/11/16:</strong> Initial iteration, probably messy.</li>
 		</ul>
 	</details>
@@ -469,11 +474,22 @@
 </section>
 
 <style>
+	:global(#page-content) {
+		padding-top: var(--header-height) !important;
+	}
+
 	section {
 		max-width: 920px;
 		margin: auto;
 		line-height: 1.75;
 		counter-reset: heading;
+	}
+
+	img.thumbnail {
+		display: block;
+		width: 100%;
+		max-width: 1169px;
+		margin: auto;
 	}
 
 	div.subtitle {
